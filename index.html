@@ -25,6 +25,7 @@
   <!-------------###-----****** title ******-----###------------>
   <title>Shoppy Shop</title>
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/form.css">
   <link rel="stylesheet" href="style/cards.css">
   <link rel="stylesheet" href="style/index-1.css">
   <link rel="stylesheet" type="text/css" href="m-f.css">
@@ -32,6 +33,10 @@
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+<!-------------###-----****** file JS ******-----###------------>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -39,15 +44,12 @@
 </head>
 
 <body>
-  <!------------###-----****** header ******-----###---------->
-  <!-------------###-----****** Side Bar Navigation 1 : menu-toggle ******-----###------------>
+  <!-------------###-----****** Side Bar Navigation ******-----###------------>
   <nav>
     <div class="logo">
       <a href="index.html"><img src="assets/shoppyshop.png"></a>
     </div>
-    <!----<a href="">
-          <h1 class="titulo"></h1>
-        </a>----->
+
     <ul>
       <a href="">
         <li>Catégorie</li>
@@ -62,11 +64,10 @@
   </nav>
   <!------###-----****** /#Side Bar Navigation ******-----###------>
   <main>
+    <section>
     <div class="vid">
-      <h1 class="title">Playlist de la video :</h1>
+      <h1 class="title">Playlist de la video</h1>
       <div class="principale">
-        <!----<video width="720" height="428" controls>
-          <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4"></video>----->
         <iframe width="810" height="480" src="https://www.youtube.com/embed/89yfvGGxoQE" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -74,119 +75,203 @@
 
 
       <div class="playlist">
-        <p class="texte-video">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus
-          voluptatibus libero nesciunt hic at quia itaque neque. Soluta rerum dolores
-          odit nesciunt, itaque quisquam animi temporibus. Exercitationem, unde doloremque!
+        <p class="texte-video">L'ordinateur portable de jeu Razer Blade Pro établit une nouvelle norme pour 
+          les ordinateurs portables de remplacement de bureau offrant une expérience immersive dans un facteur 
+          de forme incroyablement mince. Équipé d'un processeur quadricœur Intel® Core ™ i7 de 7e génération, 
+          d'une carte graphique compatible NVIDIA® GeForce® GTX 10 Series VR, d'une mémoire, d'un stockage et 
+          de ports suffisants et d'un écran de 17,3 pouces avec une résolution allant jusqu'à 4K.
         </p>
       </div>
       <div class="playlist">
-        <p class="texte-video">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus
-          voluptatibus libero nesciunt hic at quia itaque neque. Soluta rerum dolores
-          odit nesciunt, itaque quisquam animi temporibus. Exercitationem, unde doloremque!
+        <p class="texte-video">En tant que premier ordinateur portable au monde à être un appareil mobile 
+          certifié THX® de la légendaire marque audiovisuelle, l'ordinateur portable de jeu 4K Razer Blade 
+          Pro offre une expérience visuelle et audio immersive.
         </p>
       </div>
       <div class="playlist">
-        <p class="texte-video">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus
-          voluptatibus libero nesciunt hic at quia itaque neque. Soluta rerum dolores
-          odit nesciunt, itaque quisquam animi temporibus. Exercitationem, unde doloremque!
+        <p class="texte-video">Le BlackWidow Chroma V2 est le meilleur clavier de jeu mécanique au monde : il est total
+          digne de son titre. Ce clavier phare comporte trois types de commutateurs mécaniques, des touches macro et un 
+          confort optimal pour le jeu pendant des heures.
         </p>
       </div>
       <div class="playlist">
-        <p class="texte-video">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt delectus
-          voluptatibus libero nesciunt hic at quia itaque neque. Soluta rerum dolores
-          odit nesciunt, itaque quisquam animi temporibus. Exercitationem, unde doloremque!
+        <p class="texte-video">Dans le cadre d'un effort conjoint entre THX et Razer Engineering, nous avons 
+          testé une sortie audio non déformée capable de piloter des écouteurs et des haut-parleurs haute 
+          performance pour offrir une qualité audio de premier ordre.
         </p>
       </div>
       <div>
       </div>
     </div>
-    <!------###-----****** Start of the second part shoppy shop ******-----###------>
+    </section>
 
-    <section class="wrapper">
-      <h2 class="ours-card">Ours cards</h2>
-      <div class="flex-wrapper">
-        <div class="card">
-          <a href="#">
-            <div class="img"></div>
-            <div class="card-content">
-              <h2>Some</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <div class="container">
-                <button type="button" class="btn btn-warning">Ajouter</button>
-                <p class="read-more plus-3">Voire plus</p>
-              </div>
-            </div>
-            <div class="fade"></div>
-          </a>
-        </div>
-
-
-        <div class="card">
-          <a href="#">
-            <div class="img"></div>
-            <div class="card-content">
-              <h2>Gimme</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <div class="container">
-                <button type="button" class="btn btn-warning">Ajouter</button>
-                <p class="read-more plus-3">Voire plus</p>
-              </div>
-            </div>
-            <div class="fade"></div>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="#">
-            <div class="img"></div>
-            <div class="card-content">
-              <h2>Gimme</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <div class="container">
-                <button type="button" class="btn btn-warning">Ajouter</button>
-                <p class="read-more plus-3">Voire plus</p>
-              </div>
-            </div>
-            <div class="fade"></div>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="#">
-            <div class="img"></div>
-            <div class="card-content">
-              <h2>Gimme</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <div class="container">
-                <button type="button" class="btn btn-warning">Ajouter</button>
-                <p class="read-more plus-3">Voire plus</p>
-              </div>
-            </div>
-            <div class="fade"></div>
-          </a>
-        </div>
-
-        <div class="card remove-margin">
-          <a href="#">
-            <div class="img"></div>
-            <div class="card-content">
-              <h2>Gimme</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-              <div class="container">
-                <button type="button" class="btn btn-warning">Ajouter</button>
-                <p class="read-more plus-3">Voire plus</p>
-              </div>
-            </div>
-            <div class="fade"></div>
-          </a>
-        </div>
-
+<section>
+    <div class="header">
+      <div class="heading">
+        <h1 class="shop-card">Shoppy Shop</h1>
       </div>
+    </div>
+  
+    <div class="items-container">
+      <!-- Item 1 -->
+      <div class="item">
+        <img src="https://assets.razerzone.com/eeimages/products/26727/rzrblade14-04__store_gallery.png">
+        <div class="overflow">
+          <i class="fa fa-cart-plus fa-5x" id="basket"></i>
+        </div>
+        <div class="item-detail">
+          <h4>RAZER BLADE - FULL HD</h4>
+          <div class="prices">
+            <p class="price">977 985</p>
+            <p>Fcfa</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Item 2 -->
+      <div class="item">
+        <img src="https://assets.razerzone.com/eeimages/products/752/razer-ouroboros-gallery-3__store_gallery.png">
+        <div class="overflow">
+          <i class="fa fa-cart-plus fa-5x"></i>
+        </div>
+        <div class="item-detail">
+          <h4>RAZER OUROBOROS</h4>
+          <div class="prices">
+            <p class="price">76 735</p>
+            <p>Fcfa</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Item 3 -->
+      <div class="item">
+        <img src="https://assets.razerzone.com/eeimages/products/5890/razer-blackshark-gallery-4__store_gallery.png">
+        <div class="overflow">
+          <i class="fa fa-cart-plus fa-5x"></i>
+        </div>
+        <div class="item-detail">
+          <h4>RAZER BLACKSHARK</h4>
+          <div class="prices">
+            <p class="price">668 985</p>
+            <p>Fcfa</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Item 4 -->
+      <div class="item">
+        <img src="https://assets.razerzone.com/eeimages/products/26600/razer-blackwidow-chroma-v2-gallery-04-wristrest__store_gallery.png">
+        <div class="overflow">
+          <i class="fa fa-cart-plus fa-5x"></i>
+        </div>
+        <div class="item-detail">
+          <h4>RAZER BLACKWIDOW CHROMA</h4>
+          <div class="prices">
+            <p class="price">87 035</p>
+            <p>Fcfa</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Item 5 -->
+      <div class="item">
+        <img src="https://assets.razerzone.com/eeimages/products/21936/fireflycloth-gallery-5__store_gallery.png">
+        <div class="overflow">
+          <i class="fa fa-cart-plus fa-5x"></i>
+        </div>
+        <div class="item-detail">
+          <h4>RAZER FIREFLY CLOTH</h4>
+          <div class="prices">
+            <p class="price">30 385</p>
+            <p>Fcfa</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Item 6 -->
+      <div class="item">
+        <img src="https://assets.razerzone.com/eeimages/products/23901/nabu-watch-std-01__store_gallery.png">
+        <div class="overflow">
+          <i class="fa fa-cart-plus fa-5x"></i>
+        </div>
+        <div class="item-detail">
+          <h4>RAZER NABU WATCH</h4>
+          <div class="prices">
+            <p class="price">76 735</p>
+            <p>Fcfa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!------###-----****** Video ******-----###------->
+    <section>
+      <div class="videoCards">
+
+        <div class="h2"><b>Nos produits</b> </div>
+        </br>
+        <!----<div class="h3">Descriptions of The Videos Can Be Found Below</div>------->
+        <div class="contentWrap">
+          <div class="thirdsWrap">
+            <div class="vidCard">
+              <div class="vidHeadline">Shoppy Shop</div>
+
+              <div class="vidBox">
+
+                <div id="v1" class="vidBoxCover">
+                </div>
+                <div id="p1" class="player"> </div>
+              </div>
+              <div class="vidSubHeading">sWriting is copying, not just from the internet but internally as well. You’re
+                constantly merging files and rearranging stuff. In such times a complete history of things you’ve copied
+                overtime can come in really handy (even on Android).</div>
+              <div class="buttonWrapper">
+                <div class="buttonVid">Ajouter</div>
+              </div>
+            </div>
+          </div>
+          <div class="thirdsWrap">
+            <div class="vidCard">
+              <div class="vidHeadline">Shoppy Shop</div>
+              <div class="vidBox">
+                <div id="v1" class="vidBoxCover">
+                </div>
+                <div id="p1" class="player"> </div>
+              </div>
+              <div class="vidSubHeading">sWriting is copying, not just from the internet but internally as well. You’re
+                constantly merging files and rearranging stuff. In such times a complete history of things you’ve copied
+                overtime can come in really handy (even on Android).</div>
+
+              <div class="buttonWrapper">
+                <div class="buttonVid">Ajouter</div>
+              </div>
+            </div>
+          </div>
+          <div class="thirdsWrap">
+            <div class="vidCard">
+              <div class="vidHeadline">Shoppy Shop</div>
+
+              <div class="vidBox">
+
+                <div id="v1" class="vidBoxCover">
+                </div>
+                <div id="p1" class="player"> </div>
+
+              </div>
+              <div class="vidSubHeading">sWriting is copying, not just from the internet but internally as well. You’re
+                constantly merging files and rearranging stuff. In such times a complete history of things you’ve copied
+                overtime can come in really handy (even on Android).</div>
+
+              <div class="buttonWrapper">
+                <div class="buttonVid">Ajouter</div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end of content wrap -->
+      </div> <!-- end third div -->
     </section>
-    <!------###-----****** End  of the second part shoppy shop ******-----###------>
-    <div class="youtube-container"></div>
-    <!------###-----****** End  of the second part shoppy shop ******-----###------>
+
+
     <section>
       <div class="videoCards">
 
@@ -255,85 +340,8 @@
               </div>
             </div>
           </div>
-        </div> <!-- end of content wrap -->
-      </div> <!-- end third div -->
-    </section>
-
-
-
-
-
-
-    <section>
-      <div class="videoCards">
-
-        <div class="h2"><b>Nos produits</b> </div>
-        </br>
-        <!----<div class="h3">Descriptions of The Videos Can Be Found Below</div>------->
-        <div class="contentWrap">
-          <div class="thirdsWrap">
-            <div class="vidCard">
-              <div class="vidHeadline">Shoppy Shop</div>
-
-              <div class="vidBox">
-
-                <div id="v1" class="vidBoxCover">
-                </div>
-                <div id="p1" class="player"> </div>
-
-              </div>
-              <div class="vidSubHeading">sWriting is copying, not just from the internet but internally as well. You’re
-                constantly merging files and rearranging stuff. In such times a complete history of things you’ve copied
-                overtime can come in really handy (even on Android).</div>
-
-              <div class="buttonWrapper">
-                <div class="buttonVid">Ajouter</div>
-              </div>
-              
-            </div>
-          </div>
-          <div class="thirdsWrap">
-            <div class="vidCard">
-              <div class="vidHeadline">Shoppy Shop</div>
-
-              <div class="vidBox">
-
-                <div id="v1" class="vidBoxCover">
-                </div>
-                <div id="p1" class="player"> </div>
-
-              </div>
-              <div class="vidSubHeading">sWriting is copying, not just from the internet but internally as well. You’re
-                constantly merging files and rearranging stuff. In such times a complete history of things you’ve copied
-                overtime can come in really handy (even on Android).</div>
-
-              <div class="buttonWrapper">
-                <div class="buttonVid">Ajouter</div>
-              </div>
-            </div>
-          </div>
-          <div class="thirdsWrap">
-            <div class="vidCard">
-              <div class="vidHeadline">Shoppy Shop</div>
-
-              <div class="vidBox">
-
-                <div id="v1" class="vidBoxCover">
-                </div>
-                <div id="p1" class="player"> </div>
-
-              </div>
-              <div class="vidSubHeading">sWriting is copying, not just from the internet but internally as well. You’re
-                constantly merging files and rearranging stuff. In such times a complete history of things you’ve copied
-                overtime can come in really handy (even on Android).</div>
-
-              <div class="buttonWrapper">
-                <div class="buttonVid">Ajouter</div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- end of content wrap -->
-      </div> <!-- end third div -->
+        </div> 
+      </div> 
     </section>
 
     <!------###-----****** End  of the second part shoppy shop ******-----###------>
@@ -342,7 +350,7 @@
   <!----------------------------- counter start ------------------------>
   <section id="counter">
 
-    <h2 class="state-count">counter to count</h2>
+    <h2 class="state-count">Activité</h2>
 
     <div class="wrapper-2">
       <div class="counter col_fourth">
@@ -366,12 +374,26 @@
       </div>
     </div>
   </section>
-
-  
+  <!----<div class="allbutton">
+  <div class="abonne"><h4>Restez informé avec notre grande Shoppy Live</h4></div>
+  <div class="fournisseur"><h4>Nous assurons la vente et la promotion de vos produits</h4></div>
+</div>----->
+<!----<section id="Button-Boost">
+  <div class="container-1">---->
+    <!----<h4 class="fournisseur">Nous assurons la vente et la promotion de vos produits</h4>------->
+    <!-----<button type="button" class="btn btn-danger">Devenir fournisseur</button>--
+  </div>--->
+  <!----<h4  class="abonne">Restez informé avec notre grande Shoppy Live</h4>
+  <div class="container">
+    <button type="button" class="btn btn-warning">S'abonner</button>
+  </div>
+</section>---->
   <!-------------------------------------Footer----------------------------------------->
   <footer class="footer-distributed">
     <div class="footer-left">
-      <h3><img src="assets/FICHIT.png" alt=""></span></h3>
+      <div class="logo">
+        <a href="index.html"><img src="assets/shoppyshop.png"></a>
+      </div>
 
       <p class="footer-links">
         <a href="#" class="link-1">Home</a>
@@ -404,7 +426,7 @@
 
       <div>
         <i class="fas fa-envelope"></i>
-        <p><a href="fichit@gmail.com">shoppyshop@gmail.com</a></p>
+        <p><a href="shoppyshop@gmail.com">shoppyshop@gmail.com</a></p>
       </div>
     </div>
 
@@ -428,6 +450,8 @@
   <script src="js/top.js"></script>
   <script src="js/count.js"></script>
   <script src="js/video.js"></script>
+  <script src="js/form.js"></script>
+
 </body>
 
 </html>
