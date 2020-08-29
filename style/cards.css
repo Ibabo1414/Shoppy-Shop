@@ -1,0 +1,434 @@
+
+body,
+a,
+a:visited,
+a:hover {
+	font-family: arial, sans-serif;
+
+
+	text-decoration:none;
+}
+
+/*
+** STYLES
+*/
+
+.wrapper {
+	margin: 4rem auto;
+	max-width: 900px;
+}
+
+.flex-wrapper {
+	display: flex;
+	padding:1em;
+}
+
+.card {
+	background-color: white;
+	flex: 1;
+	margin-right: 1em;
+	position: relative;
+	overflow: hidden;
+  box-shadow: 0 3px 15px -5px rgba(0,0,0,.3);
+  height: 24em;
+}
+
+.ours-card{
+    text-align: center;
+    color: rgb(224, 109, 14);
+    font-size: 4rem;
+    font-weight: 2em;
+    margin-bottom: 1em;
+}
+.card .img {
+	display: block;
+	background-image: url(https://images.unsplash.com/photo-1454897834822-1ece264a5d89?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3a5615c0bc77123ece2a2663e2640341);
+	background-size: cover;
+	width: 100%;
+	height: 20em;
+	background-position: 50%;
+}
+
+.remove-margin {
+	margin: 0;
+}
+
+.card-content {
+	position: absolute;
+	background-color: white;
+	width:100%;
+	bottom: 0;
+	overflow: hidden;
+	top: 12rem;
+	transition: top .35s ease;
+}
+
+.card-content h2,
+.card-content p {
+	margin: 1rem;
+}
+
+.card:hover .card-content {
+	overflow: visible;
+	top: 0;
+}
+
+.card .fade {
+	width: 100%;
+	height: 2em;
+	background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+	position: absolute;
+	bottom: 0;
+	transition: opacity .35s ease;
+}
+
+.card:hover .fade {
+	opacity: 0;
+}
+
+.read-more{
+	color: #3da9c6;
+	text-decoration:underline;
+}
+
+
+/**
+*** MEDIA QUERIES
+**/
+
+@media screen and (max-width:745px) {
+	.flex-wrapper {
+		flex-direction: column;
+		padding: 2rem;
+	}
+	.card {
+		margin: 0 0 1rem 0;
+	}
+	
+	.card .img{
+		width:10rem;
+		height:6rem;
+		float:left;
+	}
+	
+	.card-content{
+		float:right;
+		position:static;
+		width: calc(100% - 10rem);
+	}
+	
+	.card-content p, .fade{
+		display:none;
+	}
+	
+}
+
+@media screen and (max-width:480px){
+	.card .img{
+		float:none;
+		width:100%;
+		height: 12rem;
+	}
+	.card-content{
+		float:none;
+		width:100%;
+	}
+}
+
+
+/*-------------------- Videos ------------------------*/
+
+.videoCards {
+  position: absolute;
+  width: 100%;
+}
+div.h2{
+  text-align: center;
+  color: rgb(224, 109, 14);
+  font-size: 4rem;
+  font-weight: 2em;
+}
+.contentWrap {
+	position: relative;
+  width: 100%;
+	max-width: 1500px;
+  background-color: pink;  
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+}
+.thirdsWrap {
+  top: 20px;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  box-sizing: border-box;
+  background: transparent;
+  transition-duration: 0.5s;
+  background: rgba;
+	  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+
+.vidCard {
+  background: white;
+  width: 90%;
+  display: inline-block;
+  box-sizing: border-box;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #d9d9de;
+  border-width: 2px;
+  margin-top: 26px;
+   margin-bottom: 26px;
+}
+.vidSubHeading {
+  text-align: center;
+  font-size: 14px;
+  color: grey;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.vidBox {
+  background-image: url("https://www.presse-citron.net/wordpress_prod/wp-content/uploads/2019/05/back-market-ordinateur-portable.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 190px;
+  background-position: center;
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  margin-left: -2px;
+  padding-right: 3px;
+  position: relative;
+  display: inline-block;
+}
+
+.vidBoxCover {
+  padding-right: 2px;
+  background: rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 190px;
+  background-position: center;
+  margin-top: 0px;
+  position: absolute;
+  width: calc(100% - 1px);
+  position: relative;
+  cursor: pointer;
+   padding-right: 5px;
+
+}
+
+.buttonVid {
+  text-align: center;
+  font-size: 14px;
+  color: rgb(251, 246, 246);
+  line-height: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 3px;
+  width: 200px;
+  display: inline-block;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  background: rgb(224, 109, 14);
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 1em 1em
+}
+
+/*.vidBoxCover:hover {
+  opacity: 0.4;
+  transition-duration: 0.5s;
+} */
+
+.buttonVid:hover {
+  background: grey;
+  color: white;
+  transition-duration: 0.5s;
+  border-color: grey;
+}
+
+.player {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 45.45px solid transparent;
+  border-bottom: 45.45px solid transparent;
+  border-left: 59.05px solid white;
+  border-right: 59.05px solid transparent;
+  left: calc(50% - 20px);
+  top: calc(50% - 48px);
+  background: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.player:after {
+  content: '';
+  position: absolute;
+  top: -75px;
+  left: -115px;
+  bottom: -75px;
+  right: -35px;
+  border-radius: 50%;
+  border: 10px solid white;
+  z-index: 2;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.player:hover:after, .player:focus:after {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+}
+
+#cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity: 0;
+}
+
+.videoBox {
+  position: fixed;
+  top: 12.5%;
+  background: black;
+  z-index: 50;
+  display: block;
+  background-color: white;
+  opacity: 0;
+  display: none;
+  width: 300px;
+  height: 300px;
+}
+
+.iframe1 {
+  position: relative;
+  width: 95%;
+  height: 90%;
+  top: 5%;
+  left: 2.5%;
+}
+
+#contentWrap {
+	position: relative;
+	max-width: 1500px;
+    
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+}
+
+.close-button {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  box-sizing: border-box;
+  line-height: 50px;
+  display: inline-block;
+  background: white;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+ 
+}
+.close-button:before,
+.close-button:after {
+  transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -15px;
+  display: block;
+  height: 10px;
+  width: 30px;
+  background-color: grey;
+  transition: all 0.2s ease-out;
+}
+.close-button:after {
+  transform: rotate(45deg);
+}
+.close-button:hover:before,
+.close-button:hover:after {
+  transform: rotate(90deg);
+}
+
+.topClickContainer{
+    color: white;
+    position: absolute;
+    left: calc(50%);
+    top: 620px;
+}
+
+
+.player2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 36.36px solid transparent;
+  border-bottom: 36.36px solid transparent;
+  border-left: 47.24px solid white;
+  border-right: 47.24px solid transparent;
+  left: calc(50% - 20px);
+  top: calc(50% - 48px);
+  background: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.player2:after {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: -92px;
+  bottom: -60px;
+  right: -28px;
+  border-radius: 50%;
+  border: 10px solid white;
+  z-index: 2;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.player2:hover:after, .player:focus:after {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+}
+
+.vidHeadline {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 900px){
+  .buttonVid {
+  width: 150px;
+}
+  
+}
+
+@media only screen and (max-width: 600px){
+  .thirdsWrap {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .buttonVid {
+  width: 120px;
+}
+
+.videoCards-2{
+  position: absolute;
+  margin-top: 30em;
+}

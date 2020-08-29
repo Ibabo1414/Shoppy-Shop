@@ -1,0 +1,14 @@
+ /* ================== RESPONSIVE ================== */
+@media screen and (min-width: 1200px) {
+.img-grid {
+	grid-template-columns: repeat(6, 1fr);
+}
+}
+@media screen and (max-width: 1206px) {
+.img-grid {
+	grid-template-columns: repeat(5, 1fr);
+}
+h2 {
+	font-size: 2rem;
+}
+}
