@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
   <!-------------###-----****** favicone ******-----###------------>
   <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
@@ -33,7 +34,7 @@
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<!-------------###-----****** file JS ******-----###------------>
+  <!-------------###-----****** file JS ******-----###------------>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -42,9 +43,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+<!----****** Body ******---->
 
 <body>
-  <!-------------###-----****** Side Bar Navigation ******-----###------------>
+  <!-----------************************************* NavBar ***************************************---------->
   <nav>
     <div class="logo">
       <a href="index.html"><img src="assets/shoppyshop.png"></a>
@@ -52,13 +54,13 @@
     <ul>
       <div class="wrap">
         <div class="search">
-           <input type="text" class="searchTerm" placeholder="Que recherchez-vous ?">
-           <button type="submit" class="searchButton">
-             <i class="fa fa-search"></i>
+          <input type="text" class="searchTerm" placeholder="Que recherchez-vous ?">
+          <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
           </button>
         </div>
-     </div>
-     
+      </div>
+
       <a href="">
         <li>Catégorie</li>
       </a>
@@ -70,316 +72,594 @@
       </a>
     </ul>
   </nav>
-  <!------###-----****** /#Side Bar Navigation ******-----###------>
+  <!----****** main ******---->
   <main>
-    <section>
-    <div class="vid">
-      <h1 class="title">Le live <a href="https://www.youtube.com/embed/89yfvGGxoQE"><img src="assets/live.png"></a></h1>
-      <div class="principale">
-        <iframe width="810" height="480" src="https://www.youtube.com/embed/89yfvGGxoQE" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!------###-----****** Section 1 : vid-container ******---------->
+    <div class="vid-container">
+      <div class="The-video">
+        <!--** favicon left **-->
+        <h1 class="title">Vente Flash <a href="https://www.youtube.com/embed/89yfvGGxoQE"><img src="assets/live.png"></a>
+        </h1>
+        <!--** Left **-->
+        <div class="principale">
+            <iframe width="1100" height="600" src="https://www.youtube.com/embed/TnF8bz3egPA" frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
-      <div class="playlist">
-        <p class="texte-video">L'ordinateur portable de jeu Razer Blade Pro établit une nouvelle norme pour 
-          les ordinateurs portables de remplacement de bureau offrant une expérience immersive dans un facteur 
-          de forme incroyablement mince. Équipé d'un processeur quadricœur Intel® Core ™ i7 de 7e génération, 
-          d'une carte graphique compatible NVIDIA® GeForce® GTX 10 Series VR, d'une mémoire, d'un stockage et 
-          de ports suffisants et d'un écran de 17,3 pouces avec une résolution allant jusqu'à 4K.
-        </p>
-      </div><hr>
-      <div class="playlist">
-        <p class="texte-video">En tant que premier ordinateur portable au monde à être un appareil mobile 
-          certifié THX® de la légendaire marque audiovisuelle, l'ordinateur portable de jeu 4K Razer Blade 
-          Pro offre une expérience visuelle et audio immersive.
-        </p>
-      </div><hr>
-      <div class="playlist">
-        <p class="texte-video">Le BlackWidow Chroma V2 est le meilleur clavier de jeu mécanique au monde : il est total
-          digne de son titre. Ce clavier phare comporte trois types de commutateurs mécaniques, des touches macro et un 
-          confort optimal pour le jeu pendant des heures.
-        </p>
-      </div>
-      <div class="playlist">
-        <p class="texte-video">Dans le cadre d'un effort conjoint entre THX et Razer Engineering, nous avons 
-          testé une sortie audio non déformée capable de piloter des écouteurs et des haut-parleurs haute 
-          performance pour offrir une qualité audio de premier ordre.
-        </p>  
-      </div>
-      <div>
-      </div>
-    </div>
-    </section>
+      <!--** Right **-->
+      <aside>
+         <!------###-----****** Section 5 ******---------->
+        <div class="list-2">
 
-<section>
-    <div class="header">
-      <div class="heading">
-        <h1 class="shop-card">Shoppy Shop</h1>
-      </div>
+          <h3 class="list-title">Information sur le live</h3>
+      
+          <ul class="list-items">
+            <li>On vide l'entrepôt chez Shoppy Shop. Et ce n'est qu'une fois par an. Alors 
+              dépêchez-vous de profiter de nos réductions incroyables parmi nos produits prêts 
+              à partir ou en stocks limités ! </li>
+            <li>L'ordinateur portable de jeu Razer Blade Pro établit une nouvelle norme pour 
+              les ordinateurs portables de remplacement de bureau offrant une expérience immersive dans un facteur 
+              de forme incroyablement mince.</li>
+            <li>L'ordinateur portable de jeu Razer Blade Pro établit une nouvelle norme pour 
+              les ordinateurs portables de remplacement de bureau offrant une expérience immersive dans un facteur 
+              de forme incroyablement mince.</li>
+          </ul>
+          
+        </div>
+      </aside>
     </div>
-  
-    <div class="items-container">
-      <!-- Item 1 -->
-      <div class="item">
-        <img src="https://assets.razerzone.com/eeimages/products/26727/rzrblade14-04__store_gallery.png">
-        <div class="overflow">
-          <i class="fa fa-cart-plus fa-5x" id="basket"></i>
-        </div>
-        <div class="item-detail">
-          <h4>RAZER BLADE - FULL HD</h4>
-          <div class="prices">
-            <p class="price">977 985</p>
-            <p>Fcfa</p>
+
+    <!------###-----****** Section 2 : Slide article ******---------->
+    <h1 class="title-panier slid-article">Acheter maintenant vos produits</h1>
+    <div class="article-containaire">
+      <div class="wrapper">
+        <div class="shadow-wrapper">
+          <div class="main-slider">
+            <div class="slide-controlls">
+              <i class="slide-arrow-left fa fa-chevron-left" aria-hidden="true"></i>
+              <i class="slide-arrow-right fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+            <div class="slider-track">
+              <div class="slide-container slide-one">
+                <div class="slider-text">
+                  <div class="slider-text_wrapper">
+                    <h2 class="slider-text_heading"></h2>
+                    <p class="slider-text_description"></p>
+                  </div>
+                </div>
+                <div class="slide slide_1">
+                  <img class="slider-image"
+                    src="https://media.jumiadeals.com/ci_live/4668c22de55f070a1a8c5de.desktop-gallery-large.jpg">
+                </div>
+              </div>
+              <div class="slide-container slide-two">
+                <div class="slider-text">
+                  <div class="slider-text_wrapper">
+                    <h2 class="slider-text_heading"></h2>
+                    <p class="slider-text_description"></p>
+                  </div>
+                </div>
+                <div class="slide slide_2 active">
+                  <img class="slider-image"
+                    src="https://www.journaldugeek.com/content/uploads/2019/01/capture-decran-2018-07-12-a-15-15-54-1024x527.png">
+                </div>
+              </div>
+              <div class="slide-container slide-three">
+                <div class="slider-text">
+                  <div class="slider-text_wrapper">
+                    <h2 class="slider-text_heading"></h2>
+                    <p class="slider-text_description"></p>
+                  </div>
+                </div>
+                <div class="slide slide_3">
+                  <img class="slider-image"
+                    src="https://www.picclickimg.com/d/l400/pict/174063854953_/APPLE-TV-3-eme-g%C3%A9n%C3%A9ration-A1427-t%C3%A9l%C3%A9commande.jpg">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-  
-      <!-- Item 2 -->
-      <div class="item">
-        <img src="https://assets.razerzone.com/eeimages/products/752/razer-ouroboros-gallery-3__store_gallery.png">
-        <div class="overflow">
-          <i class="fa fa-cart-plus fa-5x"></i>
-        </div>
-        <div class="item-detail">
-          <h4>RAZER OUROBOROS</h4>
-          <div class="prices">
-            <p class="price">76 735</p>
-            <p>Fcfa</p>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Item 3 -->
-      <div class="item">
-        <img src="https://assets.razerzone.com/eeimages/products/5890/razer-blackshark-gallery-4__store_gallery.png">
-        <div class="overflow">
-          <i class="fa fa-cart-plus fa-5x"></i>
-        </div>
-        <div class="item-detail">
-          <h4>RAZER BLACKSHARK</h4>
-          <div class="prices">
-            <p class="price">668 985</p>
-            <p>Fcfa</p>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Item 4 -->
-      <div class="item">
-        <img src="https://assets.razerzone.com/eeimages/products/26600/razer-blackwidow-chroma-v2-gallery-04-wristrest__store_gallery.png">
-        <div class="overflow">
-          <i class="fa fa-cart-plus fa-5x"></i>
-        </div>
-        <div class="item-detail">
-          <h4>RAZER BLACKWIDOW CHROMA</h4>
-          <div class="prices">
-            <p class="price">87 035</p>
-            <p>Fcfa</p>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Item 5 -->
-      <div class="item">
-        <img src="https://assets.razerzone.com/eeimages/products/21936/fireflycloth-gallery-5__store_gallery.png">
-        <div class="overflow">
-          <i class="fa fa-cart-plus fa-5x"></i>
-        </div>
-        <div class="item-detail">
-          <h4>RAZER FIREFLY CLOTH</h4>
-          <div class="prices">
-            <p class="price">30 385</p>
-            <p>Fcfa</p>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Item 6 -->
-      <div class="item">
-        <img src="https://assets.razerzone.com/eeimages/products/23901/nabu-watch-std-01__store_gallery.png">
-        <div class="overflow">
-          <i class="fa fa-cart-plus fa-5x"></i>
-        </div>
-        <div class="item-detail">
-          <h4>RAZER NABU WATCH</h4>
-          <div class="prices">
-            <p class="price">76 735</p>
-            <p>Fcfa</p>
-          </div>
+        <div class="breadcrumbs">
+
         </div>
       </div>
     </div>
-  </section>
-    <!------###-----****** Video ******-----###------->
-    <section>
-      <div class="videoCards">
 
-        <div class="h2 nosproduct"><b>Nos produits</b> </div>
-        </br>
-        <!----<div class="h3">Descriptions of The Videos Can Be Found Below</div>------->
-        <div class="contentWrap">
-          <div class="thirdsWrap">
-            <div class="vidCard">
-              <div class="vidHeadline">Shoppy Shop</div>
-
-              <div class="vidBox">
-
-                <div id="v1" class="vidBoxCover">
-                </div>
-                <div id="p1" class="player"> </div>
-              </div>
-              <div class="vidSubHeading">SWriting is copying, not just from the internet but internally as well. You’re
-                constantly merging files and rearranging stuff. In such times a complete history of things you’ve copied
-                overtime can come in really handy (even on Android).</div>
-              <div class="buttonWrapper">
-                <div class="buttonVid">Ajouter</div>
-              </div>
-            </div>
-          </div>
-          <div class="thirdsWrap">
-            <div class="vidCard">
-              <div class="vidHeadline">Shoppy Shop</div>
-              <div class="vidBox">
-                <div id="v1" class="vidBoxCover">
-                </div>
-                <div id="p1" class="player"> </div>
-              </div>
-              <div class="vidSubHeading">sWriting is copying, not just from the internet but internally as well. You’re
-                constantly merging files and rearranging stuff. In such times a complete history of things you’ve copied
-                overtime can come in really handy (even on Android).</div>
-
-              <div class="buttonWrapper">
-                <div class="buttonVid">Ajouter</div>
-              </div>
-            </div>
-          </div>
-          <div class="thirdsWrap">
-            <div class="vidCard">
-              <div class="vidHeadline">Shoppy Shop</div>
-
-              <div class="vidBox">
-
-                <div id="v1" class="vidBoxCover">
-                </div>
-                <div id="p1" class="player"> </div>
-
-              </div>
-              <div class="vidSubHeading">sWriting is copying, not just from the internet but internally as well. You’re
-                constantly merging files and rearranging stuff. In such times a complete history of things you’ve copied
-                overtime can come in really handy (even on Android).</div>
-
-              <div class="buttonWrapper">
-                <div class="buttonVid">Ajouter</div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- end of content wrap -->
-      </div> <!-- end third div -->
     </section>
+    </div>
 
-
-    <section>
-      <div class="videoCards videotwo">
-
-        <div class="h2"><b>Nos produits</b> </div>
-        </br>
-        <!----<div class="h3">Descriptions of The Videos Can Be Found Below</div>------->
-        <div class="contentWrap">
-          <div class="thirdsWrap">
-            <div class="vidCard">
-              <div class="vidHeadline">Shoppy Shop</div>
-
-              <div class="vidBox">
-
-                <div id="v1" class="vidBoxCover">
+    <!------###-----****** Section 3 : panier-container ******---------->
+    <h1 class="title-panier">LES OFFRES À NE PAS MANQUER !</h1>
+    <div class="panier-container">
+      <div class="market">
+        <div class="product_grid">
+          <ul class="product_list list">
+            <li class="product_item">
+              <div class="product_sale">
+                <p>À vendre</p>
+              </div>
+              <div class="product_image">
+                <a href="#"><img
+                    src="https://media.jumiadeals.com/ci_live/4668c22de55f070a1a8c5de.desktop-gallery-large.jpg"
+                    alt=""></a>
+                <div class="product_buttons">
+                  <button class="product_heart"><i class="fa fa-heart"></i></button>
+                  <button class="product_compare"><i class="fa fa-random"></i></button>
+                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
                 </div>
-                <div id="p1" class="player"> </div>
-
               </div>
-              <div class="vidSubHeading">sWriting is copying, not just from the internet but internally as well. You’re
-                constantly merging files and rearranging stuff. In such times a complete history of things you’ve copied
-                overtime can come in really handy (even on Android).</div>
-
-              <div class="buttonWrapper">
-                <div class="buttonVid">Ajouter</div>
+              <div class="product_values">
+                <div class="product_title">
+                  <h5>RAZER BLADE - FULL HD</h5>
+                </div>
+                <div class="product_price">
+                  <a href="#"><span class="price_old"> 34 989 Fcfa</span> <span class="price_new">30 050 Fcfa</span></a>
+                  <span class="product_rating"></span>
+                </div>
+                <div class="product_desc">
+                  <p class="truncate">Le Razer Blade 15 (Ecran Edge-to-Edge, 
+                    GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)
+                    </p>
+                </div>
+                <div class="product_buttons">
+                  <button class="product_heart"><i class="fa fa-heart"></i></button>
+                  <button class="product_compare"><i class="fa fa-random"></i></button>
+                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <button class="add-to-cart">
+                  <div class="default">Payer</div>
+                  <div class="success">Plus</div>
+                  <div class="cart">
+                    <div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                  <div class="dots"></div>
+                </button>
               </div>
-              
+            </li>
+            <li class="product_item">
+              <div class="product_sale">
+                <p>À vendre</p>
+              </div>
+              <div class="product_image">
+                <a href="#"><img
+                    src="https://assets.razerzone.com/eeimages/products/752/razer-ouroboros-gallery-3__store_gallery.png"
+                    alt=""></a>
+                <div class="product_buttons">
+                  <button class="product_heart"><i class="fa fa-heart"></i></button>
+                  <button class="product_compare"><i class="fa fa-random"></i></button>
+                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product_values">
+                <div class="product_title">
+                  <h5>RAZER OUROBOROS</h5>
+                </div>
+                <div class="product_price">
+                  <a href="#"><span class="price_old">45 000 Fcfa</span> <span class="price_new"> 38 230 Fcfa</span></a>
+                  <span class="product_rating"></span>
+                </div>
+                <div class="product_desc">
+                  <p class="truncate">L'Ouroboros de Razer est une souris haut de gamme 
+                    GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
+                </div>
+                <div class="product_buttons">
+                  <button class="product_heart"><i class="fa fa-heart"></i></button>
+                  <button class="product_compare"><i class="fa fa-random"></i></button>
+                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <button class="add-to-cart">
+                  <div class="default">Payer</div>
+                  <div class="success">Plus</div>
+                  <div class="cart">
+                    <div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                  <div class="dots"></div>
+                </button>
+              </div>
+            </li>
+            <li class="product_item">
+              <div class="product_sale">
+                <p>À vendre</p>
+              </div>
+              <div class="product_image">
+                <a href="#"><img
+                    src="https://assets.razerzone.com/eeimages/products/5890/razer-blackshark-gallery-4__store_gallery.png"
+                    alt=""></a>
+                <div class="product_buttons">
+                  <button class="product_heart"><i class="fa fa-heart"></i></button>
+                  <button class="product_compare"><i class="fa fa-random"></i></button>
+                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product_values">
+                <div class="product_title">
+                  <h5>RAZER BLACKSHARK</h5>
+                </div>
+                <div class="product_price">
+                  <a href="#"><span class="price_old"> 50 000 Fcfa</span> <span class="price_new">43 345 Fcfa</span></a>
+                  <span class="product_rating"></span>
+                </div>
+                <div class="product_desc">
+                  <p class="truncate">Le Razer Blackshark 15 (Casque, 
+                    GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
+                </div>
+                <div class="product_buttons">
+                  <button class="product_heart"><i class="fa fa-heart"></i></button>
+                  <button class="product_compare"><i class="fa fa-random"></i></button>
+                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <button class="add-to-cart">
+                  <div class="default">Payer</div>
+                  <div class="success">Plus</div>
+                  <div class="cart">
+                    <div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                  <div class="dots"></div>
+                </button>
+              </div>
+            </li>
+
+
+            <li class="product_item">
+              <div class="product_sale">
+                <p>À vendre</p>
+              </div>
+              <div class="product_image">
+                <a href="#"><img
+                    src="https://overclocking.com/wp-content/uploads/2018/08/Gigabyte-Aorus-M5-1.jpg"
+                    alt=""></a>
+                <div class="product_buttons">
+                  <button class="product_heart"><i class="fa fa-heart"></i></button>
+                  <button class="product_compare"><i class="fa fa-random"></i></button>
+                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product_values">
+                <div class="product_title">
+                  <h5>RAZER BLACKSHARK</h5>
+                </div>
+                <div class="product_price">
+                  <a href="#"><span class="price_old">46 909 Fcfa</span> <span class="price_new"> 38 750 Fcfa</span></a>
+                  <span class="product_rating"></span>
+                </div>
+                <div class="product_desc">
+                  <p class="truncate">Le Razer Blade (souris, 
+                    GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
+                </div>
+                <div class="product_buttons">
+                  <button class="product_heart"><i class="fa fa-heart"></i></button>
+                  <button class="product_compare"><i class="fa fa-random"></i></button>
+                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <button class="add-to-cart">
+                  <div class="default">Payer</div>
+                  <div class="success">Plus</div>
+                  <div class="cart">
+                    <div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                  <div class="dots"></div>
+                </button>
+              </div>
+            </li>
+
+
+            <li class="product_item">
+              <div class="product_sale">
+                <p>À vendre</p>
+              </div>
+              <div class="product_image">
+                <a href="#"><img
+                    src="https://i.ebayimg.com/images/g/ge4AAOSwS4ddGhe-/s-l300.jpg"
+                    alt=""></a>
+                <div class="product_buttons">
+                  <button class="product_heart"><i class="fa fa-heart"></i></button>
+                  <button class="product_compare"><i class="fa fa-random"></i></button>
+                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product_values">
+                <div class="product_title">
+                  <h5>RAZER BLACKSHARK</h5>
+                </div>
+                <div class="product_price">
+                  <a href="#"><span class="price_old"> 65 908 Fcfa</span> <span class="price_new">50 676 Fcfa</span></a>
+                  <span class="product_rating"></span>
+                </div>
+                <div class="product_desc">
+                  <p class="truncate">Le Razer Blade 15 (Ecran Edge-to-Edge, 
+                    GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
+                </div>
+                <div class="product_buttons">
+                  <button class="product_heart"><i class="fa fa-heart"></i></button>
+                  <button class="product_compare"><i class="fa fa-random"></i></button>
+                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <button class="add-to-cart">
+                  <div class="default">Payer</div>
+                  <div class="success">Plus</div>
+                  <div class="cart">
+                    <div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                  <div class="dots"></div>
+                </button>
+              </div>
+            </li>
+
+        <!------###-----****** Section 4 : panier-container ******---------->
+
+        <div class="panier-container choice-panier">
+          <div class="market">
+            <div class="product_grid">
+              <ul class="product_list list">
+                <li class="product_item">
+                  <div class="product_sale">
+                    <p>À vendre</p>
+                  </div>
+                  <div class="product_image">
+                    <a href="#"><img
+                        src="https://ae01.alicdn.com/kf/HTB1FiElNFXXXXchaXXXq6xXFXXXA/Sac-vid-o-de-luxe-pour-appareil-photo-sac-en-simili-cuir-sangle-pour-Sony-HX90.jpg"
+                        alt=""></a>
+                    <div class="product_buttons">
+                      <button class="product_heart"><i class="fa fa-heart"></i></button>
+                      <button class="product_compare"><i class="fa fa-random"></i></button>
+                      <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                  </div>
+                  <div class="product_values">
+                    <div class="product_title">
+                      <h5>Sony HX90 WX500</h5>
+                    </div>
+                    <div class="product_price">
+                      <a href="#"><span class="price_old">43 890 Fcfa</span> <span class="price_new">30 100 Fcfa</span></a>
+                      <span class="product_rating"></span>
+                    </div>
+                    <div class="product_desc">
+                      <p class="truncate">Le Sony HX90 avec pochette ( 
+                        GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
+                    </div>
+                    <div class="product_buttons">
+                      <button class="product_heart"><i class="fa fa-heart"></i></button>
+                      <button class="product_compare"><i class="fa fa-random"></i></button>
+                      <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                    <button class="add-to-cart">
+                      <div class="default">Payer</div>
+                      <div class="success">Plus</div>
+                      <div class="cart">
+                        <div>
+                          <div></div>
+                          <div></div>
+                        </div>
+                      </div>
+                      <div class="dots"></div>
+                    </button>
+                  </div>
+                </li>
+                <li class="product_item">
+                  <div class="product_sale">
+                    <p>À vendre</p>
+                  </div>
+                  <div class="product_image">
+                    <a href="#"><img src="https://www.universfreebox.com/UserFiles/image/samsung%20w2019%202.jpg"
+                        alt=""></a>
+                    <div class="product_buttons">
+                      <button class="product_heart"><i class="fa fa-heart"></i></button>
+                      <button class="product_compare"><i class="fa fa-random"></i></button>
+                      <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                  </div>
+                  <div class="product_values">
+                    <div class="product_title">
+                      <h5>Samsung AMOLED</h5>
+                    </div>
+                    <div class="product_price">
+                      <a href="#"><span class="price_old">29 789 Fcfa</span> <span class="price_new">20 230 Fcfa</span></a>
+                      <span class="product_rating"></span>
+                    </div>
+                    <div class="product_desc">
+                      <p class="truncate">Le Samsung Amoled (Ecran Edge-to-Edge, 
+                        GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
+                    </div>
+                    <div class="product_buttons">
+                      <button class="product_heart"><i class="fa fa-heart"></i></button>
+                      <button class="product_compare"><i class="fa fa-random"></i></button>
+                      <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                    <button class="add-to-cart">
+                      <div class="default">Payer</div>
+                      <div class="success">Plus</div>
+                      <div class="cart">
+                        <div>
+                          <div></div>
+                          <div></div>
+                        </div>
+                      </div>
+                      <div class="dots"></div>
+                    </button>
+                  </div>
+                </li>
+                <li class="product_item">
+                  <div class="product_sale">
+                    <p>À vendre</p>
+                  </div>
+                  <div class="product_image">
+                    <a href="#"><img
+                        src="https://dyw7ncnq1en5l.cloudfront.net/optim/produits/23/42293/hp-spectre-x360-13-ae0xx_abe4e0635e23d494__w1280.jpg"
+                        alt=""></a>
+                    <div class="product_buttons">
+                      <button class="product_heart"><i class="fa fa-heart"></i></button>
+                      <button class="product_compare"><i class="fa fa-random"></i></button>
+                      <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                  </div>
+                  <div class="product_values">
+                    <div class="product_title">
+                      <h5>HP Spectre X360</h5>
+                    </div>
+                    <div class="product_price">
+                      <a href="#"><span class="price_old">879 099 Fcfa</span> <span class="price_new">698 990 Fcfa</span></a>
+                      <span class="product_rating"></span>
+                    </div>
+                    <div class="product_desc">
+                      <p class="truncate">Le HP Spectre X360 (Ecran Edge-to-Edge, 
+                        GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
+                    </div>
+                    <div class="product_buttons">
+                      <button class="product_heart"><i class="fa fa-heart"></i></button>
+                      <button class="product_compare"><i class="fa fa-random"></i></button>
+                      <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                    <button class="add-to-cart">
+                      <div class="default">Payer</div>
+                      <div class="success">Plus</div>
+                      <div class="cart">
+                        <div>
+                          <div></div>
+                          <div></div>
+                        </div>
+                      </div>
+                      <div class="dots"></div>
+                    </button>
+                  </div>
+                </li>
+                <li class="product_item">
+                  <div class="product_sale">
+                    <p>À vendre</p>
+                  </div>
+                  <div class="product_image">
+                    <a href="#"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFjamfnSIhjL-711sYrfkekvaCZlcrNr_bCA&usqp=CAU"
+                        alt=""></a>
+                    <div class="product_buttons">
+                      <button class="product_heart"><i class="fa fa-heart"></i></button>
+                      <button class="product_compare"><i class="fa fa-random"></i></button>
+                      <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                  </div>
+                  <div class="product_values">
+                    <div class="product_title">
+                      <h5>HP Spectre Folio</h5>
+                    </div>
+                    <div class="product_price">
+                      <a href="#"><span class="price_old">710 000 Fcfa</span> <span class="price_new">505 780 Fcfa</span></a>
+                      <span class="product_rating"></span>
+                    </div>
+                    <div class="product_desc">
+                      <p class="truncate">Le HP Spectre Folio (Ecran Edge-to-Edge, 
+                        GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
+                    </div>
+                    <div class="product_buttons">
+                      <button class="product_heart"><i class="fa fa-heart"></i></button>
+                      <button class="product_compare"><i class="fa fa-random"></i></button>
+                      <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                    <button class="add-to-cart">
+                      <div class="default">Payer</div>
+                      <div class="success">Plus</div>
+                      <div class="cart">
+                        <div>
+                          <div></div>
+                          <div></div>
+                        </div>
+                      </div>
+                      <div class="dots"></div>
+                    </button>
+                  </div>
+                </li>
+                <li class="product_item">
+                  <div class="product_sale">
+                    <p>À vendre</p>
+                  </div>
+                  <div class="product_image">
+                    <a href="#"><img src="https://www.on-mag.fr/images/stories/2020/07/leica-m10r-dessus.png"
+                        alt=""></a>
+                    <div class="product_buttons">
+                      <button class="product_heart"><i class="fa fa-heart"></i></button>
+                      <button class="product_compare"><i class="fa fa-random"></i></button>
+                      <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                  </div>
+                  <div class="product_values">
+                    <div class="product_title">
+                      <h5>Leica M10-R</h5>
+                    </div>
+                    <div class="product_price">
+                      <a href="#"><span class="price_old">599 890 Fcfa</span> <span class="price_new">320 000 Fcfa</span></a>
+                      <span class="product_rating"></span>
+                    </div>
+                    <div class="product_desc">
+                      <p class="truncate">L'appareil photo Leica M10-R ( 
+                        GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
+                    </div>
+                    <div class="product_buttons">
+                      <button class="product_heart"><i class="fa fa-heart"></i></button>
+                      <button class="product_compare"><i class="fa fa-random"></i></button>
+                      <button class="add_to_cart"><i class="fa fa-credit-card"></i></button>
+                    </div>
+
+                    <button class="add-to-cart">
+                      <div class="default">Payer</div>
+                      <div class="success">Plus</div>
+                      <div class="cart">
+                        <div>
+                          <div></div>
+                          <div></div>
+                        </div>
+                      </div>
+                      <div class="dots"></div>
+                    </button>
+                  </div>
+                </li>
+
+              </ul>
             </div>
           </div>
-          <div class="thirdsWrap">
-            <div class="vidCard">
-              <div class="vidHeadline">Shoppy Shop</div>
-
-              <div class="vidBox">
-
-                <div id="v1" class="vidBoxCover">
-                </div>
-                <div id="p1" class="player"> </div>
-
-              </div>
-              <div class="vidSubHeading">sWriting is copying, not just from the internet but internally as well. You’re
-                constantly merging files and rearranging stuff. In such times a complete history of things you’ve copied
-                overtime can come in really handy (even on Android).</div>
-
-              <div class="buttonWrapper">
-                <div class="buttonVid">Ajouter</div>
-              </div>
-            </div>
-          </div>
-          <div class="thirdsWrap">
-            <div class="vidCard">
-              <div class="vidHeadline">Shoppy Shop</div>
-
-              <div class="vidBox">
-
-                <div id="v1" class="vidBoxCover">
-                </div>
-                <div id="p1" class="player"> </div>
-
-              </div>
-              <div class="vidSubHeading">sWriting is copying, not just from the internet but internally as well. You’re
-                constantly merging files and rearranging stuff. In such times a complete history of things you’ve copied
-                overtime can come in really handy (even on Android).</div>
-
-              <div class="buttonWrapper">
-                <div class="buttonVid">Ajouter</div>
-              </div>
-            </div>
-          </div>
-        </div> 
-      </div> 
-    </section>
-
-    <!------###-----****** End  of the second part shoppy shop ******-----###------>
 
   </main>
-  <!----------------------------- counter start ------------------------>
-  <section id="counter">
-
-    <h2 class="state-count">Activité</h2>
-
-    <div class="wrapper-2">
-      <div class="counter col_fourth">
-        <i class="fa fa-code fa-2x"></i>
-        <h2 class="timer count-title count-number" data-to="300" data-speed="1500"></h2>
-        <p class="count-text ">SomeText GoesHere</p>
-      </div>
-
-      <div class="counter col_fourth">
-        <i class="fa fa-coffee fa-2x"></i>
-        <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
-        <p class="count-text ">SomeText GoesHere</p>
-      </div>
-
-      
-
-      <div class="counter col_fourth end">
-        <i class="fa fa-bug fa-2x"></i>
-        <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
-        <p class="count-text ">SomeText GoesHere</p>
-      </div>
-    </div>
-  </section>
-  <!-------------------------------------Footer----------------------------------------->
+  <!-------------###-----****** Button back to top ******-----###------------>
+  <button id="back-to-top-btn">
+    <i class="fas fa-angle-double-up"></i>
+  </button>
+<!-------------###-----****** Newsletter ******-----###------------>
+<div id="newsletter">
+<div class="container-news">
+	<div class="row">
+        <div class="col-md-4">
+    		<div class="thumbnail center well well-sm text-center">
+                <h2>Newsletter</h2>
+                
+                <p class="text-news">INSCRIVEZ-VOUS À NOTRE NEWSLETTER</p>
+                
+                <form action="" method="post" role="form">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="fa fa-envelope"></i>
+                      </span>
+                      <input class="form-control" type="text" id="" name="" placeholder="votre@email.com">
+                    </div>
+                    <input type="submit" value="Souscrire" class="btn btn-large btn-primary" />
+              </form>
+            </div>    
+        </div>
+	</div>
+</div>
+</div>
+  <!----****** footer ******---->
   <footer class="footer-distributed">
     <div class="footer-left">
       <div class="logo shoppy">
@@ -432,6 +712,7 @@
         <a href="#" class="fab fa-twitter"></a>
         <a href="#" class="fab fa-linkedin"></a>
         <a href="#" class="fab fa-github"></a>
+        <a href="#" class="fab fa-youtube"></a>
       </div>
     </div>
 
@@ -441,6 +722,9 @@
   <script src="js/count.js"></script>
   <script src="js/video.js"></script>
   <script src="js/form.js"></script>
+  <script src="js/button.js"></script>
+  <script src="js/slide.js"></script>
+  <script src="js/back.js"></script>
 
 </body>
 
