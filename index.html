@@ -2,414 +2,563 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=7">
-  <!-------------###-----****** favicone ******-----###------------>
-  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="manifest" href="img/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <!-------------###-----****** title ******-----###------------>
-  <title>Shoppy Shop</title>
-  <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="style/form.css">
-  <link rel="stylesheet" href="style/cards.css">
-  <link rel="stylesheet" href="style/index-1.css">
-  <link rel="stylesheet" type="text/css" href="m-f.css">
+  <!-- basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>SHOPPY SHOP</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- site icons -->
+  <link rel="icon" href="images/fevicon/fevicon.png" type="image/gif" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Site css -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- responsive css -->
+  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- colors css -->
+  <link rel="stylesheet" href="css/colors1.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/custom.css" />
+  <!-- wow Animation css -->
+  <link rel="stylesheet" href="css/animate.css" />
+  <!-- wow Animation css -->
+  <link rel="stylesheet" href="css/more-panier.css" />
+  <!-- slider css -->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
+  <!-- revolution slider css -->
+  <link rel="stylesheet" type="text/css" href="revolution/css/settings.css" />
+  <link rel="stylesheet" type="text/css" href="revolution/css/layers.css" />
+  <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css" />
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- File PWA-->
+    <meta name="theme-color" content="#ffff" />
+    <link rel="manifest" href="manifest.json">
+    <script>
+        //if browser support service worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        };
+    </script>
 
-  <!-------------###-----****** file JS ******-----###------------>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<!----****** Body ******---->
 
-<body>
-  <!-----------************************************* NavBar ***************************************---------->
-  <nav>
-    <div class="logo">
-      <a href="index.html"><img src="assets/shoppyshop.png"></a>
-    </div>
-    <ul>
-      <div class="wrap">
-        <div class="search">
-          <input type="text" class="searchTerm" placeholder="Que recherchez-vous ?">
-          <button type="submit" class="searchButton">
-            <i class="fa fa-search"></i>
-          </button>
-        </div>
-      </div>
+<body id="default_theme" class="it_service">
+  <!-- loader -->
+  <div class="bg_load"> <img class="loader_animation" src="images/loaders/loader_1.png" alt="#" /> </div>
+  <!-- end loader -->
+  <!-- header -->
+  <header id="default_header" class="header_style_1">
+    <!-- header top -->
+    <div class="header_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="full">
+              <div class="topbar-left">
+                <ul class="list-inline">
+                  <li> <span class="topbar-label"><i class="fa  fa-home"></i></span> <span class="topbar-hightlight">
+                      Librevill, Akanda, Gabon, AB 2020 </span> </li>
+                  <li> <span class="topbar-label"><i class="fa  fa-phone"></i></span> <span
+                      class="topbar-hightlight">Commandez par téléphone </span> </li>
 
-      <a href="">
-        <li>Catégorie</li>
-      </a>
-      <a href="">
-        <li>Panier</li>
-      </a>
-      <a href="">
-        <li>contact</li>
-      </a>
-    </ul>
-  </nav>
-  <!----****** main ******---->
-  <main>
-    <!------###-----****** Section 1 : vid-container ******---------->
-    <div class="vid-container">
-      <div class="The-video">
-        <!--** favicon left **-->
-        <h1 class="title">Vente Flash <a href="https://www.youtube.com/embed/89yfvGGxoQE"><img src="assets/live.png"></a>
-        </h1>
-        <!--** Left **-->
-        <div class="principale">
-            <iframe width="1100" height="700" src="https://www.youtube.com/embed/TnF8bz3egPA" frameborder="0" 
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-      <!--** Right **-->
-      <aside>
-         <!------###-----****** Section 5 ******---------->
-        <div class="list-2">
-          <!------###-----****** the timing live of the shoppy shop  ******---------->
-          <div class="timing">
-            <div class="container-chrono">
-              <form name="timerPartie">
-                <label for="partie">Fin de la partie dans</label>
-                <input type="hidden" name="temps" value="60" />
-              </form>
-              
-              <p id="chrono"></p>
-            </div>
-            </div>
-          <h3 class="list-title">Information sur le live du jour</h3>
-      
-          <ul class="list-items">
-            <li>On vide l'entrepôt chez Shoppy Shop. Et ce n'est qu'une fois par an. Alors 
-              dépêchez-vous de profiter de nos réductions incroyables parmi nos produits prêts 
-              à partir ou en stocks limités ! </li>
-            <li>L'ordinateur portable de jeu Razer Blade Pro établit une nouvelle norme pour 
-              les ordinateurs portables de remplacement de bureau offrant une expérience immersive dans un facteur 
-              de forme incroyablement mince.</li>
-            <li>L'ordinateur portable de jeu Razer Blade Pro établit une nouvelle norme pour 
-              les ordinateurs portables de remplacement de bureau offrant une expérience immersive</li>
-          </ul>
-          
-        </div>
-      </aside>
-    </div>
-
-    <!------###-----****** Section 2 : Slide article ******---------->
-    <h1 class="title-panier slid-article">Acheter maintenant vos produits</h1>
-    <div class="article-containaire">
-      <div class="wrapper">
-        <div class="shadow-wrapper">
-          <div class="main-slider">
-            <div class="slide-controlls">
-              <i class="slide-arrow-left fa fa-chevron-left" aria-hidden="true"></i>
-              <i class="slide-arrow-right fa fa-chevron-right" aria-hidden="true"></i>
-            </div>
-            <div class="slider-track">
-              <div class="slide-container slide-one">
-                <div class="slider-text">
-                  <div class="slider-text_wrapper">
-                    <h2 class="slider-text_heading"></h2>
-                    <p class="slider-text_description"></p>
-                  </div>
-                </div>
-                <div class="slide slide_1">
-                  <img class="slider-image"
-                    src="https://media.jumiadeals.com/ci_live/4668c22de55f070a1a8c5de.desktop-gallery-large.jpg">
-                </div>
+                  <li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span
+                      class="topbar-hightlight"><a href="#">shoppyshp@gmail.com</a></span>
+                  </li>
+                </ul>
               </div>
-              <div class="slide-container slide-two">
-                <div class="slider-text">
-                  <div class="slider-text_wrapper">
-                    <h2 class="slider-text_heading"></h2>
-                    <p class="slider-text_description"></p>
-                  </div>
-                </div>
-                <div class="slide slide_2 active">
-                  <img class="slider-image"
-                    src="https://www.journaldugeek.com/content/uploads/2019/01/capture-decran-2018-07-12-a-15-15-54-1024x527.png">
-                </div>
+            </div>
+          </div>
+          <div class="col-md-4 right_section_header_top">
+            <div class="float-left">
+              <div class="social_icon">
+                <ul class="list-inline">
+                  <li><a class="fa fa-facebook" href="#" title="Facebook" target="_blank"></a>
+                  </li>
+                  <li><a class="fa fa-google-plus" href="#" title="Google+" target="_blank"></a>
+                  </li>
+                  <li><a class="fa fa-twitter" href="#" title="Twitter" target="_blank"></a></li>
+                  <li><a class="fa fa-linkedin" href="#" title="LinkedIn" target="_blank"></a>
+                  </li>
+                  <li><a class="fa fa-instagram" href="#" title="Instagram" target="_blank"></a>
+                  </li>
+                </ul>
               </div>
-              <div class="slide-container slide-three">
-                <div class="slider-text">
-                  <div class="slider-text_wrapper">
-                    <h2 class="slider-text_heading"></h2>
-                    <p class="slider-text_description"></p>
-                  </div>
-                </div>
-                <div class="slide slide_3">
-                  <img class="slider-image"
-                    src="https://www.picclickimg.com/d/l400/pict/174063854953_/APPLE-TV-3-eme-g%C3%A9n%C3%A9ration-A1427-t%C3%A9l%C3%A9commande.jpg">
-                </div>
+            </div>
+            <div class="float-right">
+              <div class="make_appo"> <a class="btn white_btn" href="index.html">Prenez rendez-vous</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="breadcrumbs">
+      </div>
+    </div>
+    <!-- end header top -->
 
+    <!---===================== Principal header ======================-->
+    <!-- header bottom -->
+    <div class="header_bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <!-- logo start -->
+            <div class="logo"> <a href="index.html"><img src="images/logos/it_logo.png" alt="logo" /></a> </div>
+            <!-- logo end -->
+          </div>
+          <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+            <!-- menu start -->
+            <div class="menu_side">
+              <div id="navbar_menu">
+                <ul class="first-ul">
+                  <li> <a class="active" href="#">Accueil</a>
+                    <ul>
+                      <li><a href="#">Page 1</a></li>
+                      <li><a href="#">Page 2</a></li>
+                    </ul>
+                  </li>
+
+                  <li> <a href="#">Catalogue</a>
+                    <ul>
+                      <li><a href="#">Téléphone</a></li>
+                      <li><a href="#">friperies</a></li>
+                      <li><a href="#">Automobiles</a></li>
+                      <li><a href="#">Electro-ménager</a></li>
+                      <li><a href="#">Les meches bresiliennes</a></li>
+                    </ul>
+                  </li>
+
+                  <!----<li> <a href="#">Panier</a>
+                    <ul>
+                      <li><a href="#">Shop List</a></li>
+                      <li><a href="#">Shop Detail</a></li>
+                      <li><a href="#">Shopping Cart</a></li>
+                      <li><a href="#">Checkout</a></li>
+                    </ul>
+                  </li>----->
+                  
+                  <li> <a href="#">Contact</a>
+                    <ul>
+                      <li><a href="#">Page</a></li>
+                      
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="search_icon">
+                <ul>
+                  <li><a href="#" data-toggle="modal" data-target="#search_bar"><i class="fa fa-search"
+                        aria-hidden="true"></i></a></li>
+                </ul>
+                <a href="#"><i class="fas fa-shopping-basket"></i></a>
+              </div>
+    
+              <div class="user-settings">
+                <button class="button">
+             
+                <img class="user-profile " src="data:image/jpeg;base64,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" alt="">           
+               </div>
+            </div>
+            <!-- menu end -->
+          </div>
         </div>
       </div>
     </div>
+    <!-- header bottom end -->
+  </header>
+  <!-- end header -->
 
-    </section>
+  <!---===================== The tiker ======================-->
+  <main>
+    <div class="ticker">
+
+      <div class="ticker-tip">
+        <div class="ticker-tip-info">
+          <i class="icon-info">i</i>
+          <span>Ne ratez rien de notre show liveAchat !<span>
+        </div>
+      </div>
+      <div class="ticker-title">
+        <span>LiveAchat</span>
+        <span>LiveAchat</span>
+        <span>LiveAchat</span>
+        <span>LiveAchat</span>
+        <span>LiveAchat</span>
+        <span>LiveAchat</span>
+        <span>LiveAchat</span>
+        <span>LiveAchat</span>
+        <span>LiveAchat</span>
+        <span>LiveAchat</span>
+      </div>
+      <div class="ticker-news">
+        <span>
+          <span>Dans 1 minute nous allons commencer le liveAchat de 15 minutes !</span>
+          <span>Soyez prêt car nous vous reservons de très belle surprise aujourd'hui !</span>
+          <span>Dans 1 minute nous allons commencer le liveAchat de 15 minutes!</span>
+          <span>Soyez prêt car nous vous reservons de très belle surprise aujourd'hui !</span>
+          <span>Dans 1 minute nous allons commencer le liveAchat de 15 minutes !</span>
+          <span>Soyez prêt car nous vous reservons de très belle surprise aujourd'hui !</span>
+        </span>
+      </div>
     </div>
 
-    <!------###-----****** Section 3 : panier-container ******---------->
-    <h1 class="title-panier">LES OFFRES À NE PAS MANQUER !</h1>
-    <div class="panier-container">
-      <div class="market">
-        <div class="product_grid">
-          <ul class="product_list list">
-            <li class="product_item">
-              <div class="product_sale">
-                <p>À vendre</p>
-              </div>
-              <div class="product_image">
-                <a href="#"><img
-                    src="https://media.jumiadeals.com/ci_live/4668c22de55f070a1a8c5de.desktop-gallery-large.jpg"
-                    alt=""></a>
-                <div class="product_buttons">
-                  <button class="product_heart"><i class="fa fa-heart"></i></button>
-                  <button class="product_compare"><i class="fa fa-random"></i></button>
-                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
-                </div>
-              </div>
-              <div class="product_values">
-                <div class="product_title">
-                  <h5>RAZER BLADE - FULL HD</h5>
-                </div>
-                <div class="product_price">
-                  <a href="#"><span class="price_old"> 34 989 Fcfa</span> <span class="price_new">30 050 Fcfa</span></a>
-                  <span class="product_rating"></span>
-                </div>
-                <div class="product_desc">
-                  <p class="truncate">Le Razer Blade 15 (Ecran Edge-to-Edge, 
-                    GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)
-                    </p>
-                </div>
-                <div class="product_buttons">
-                  <button class="product_heart"><i class="fa fa-heart"></i></button>
-                  <button class="product_compare"><i class="fa fa-random"></i></button>
-                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
-                </div>
-                <button class="add-to-cart">
-                  <div class="default">Payer</div>
-                  <div class="success">Plus</div>
-                  <div class="cart">
-                    <div>
-                      <div></div>
-                      <div></div>
-                    </div>
-                  </div>
-                  <div class="dots"></div>
-                </button>
-              </div>
-            </li>
-            <li class="product_item">
-              <div class="product_sale">
-                <p>À vendre</p>
-              </div>
-              <div class="product_image">
-                <a href="#"><img
-                    src="https://assets.razerzone.com/eeimages/products/752/razer-ouroboros-gallery-3__store_gallery.png"
-                    alt=""></a>
-                <div class="product_buttons">
-                  <button class="product_heart"><i class="fa fa-heart"></i></button>
-                  <button class="product_compare"><i class="fa fa-random"></i></button>
-                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
-                </div>
-              </div>
-              <div class="product_values">
-                <div class="product_title">
-                  <h5>RAZER OUROBOROS</h5>
-                </div>
-                <div class="product_price">
-                  <a href="#"><span class="price_old">45 000 Fcfa</span> <span class="price_new"> 38 230 Fcfa</span></a>
-                  <span class="product_rating"></span>
-                </div>
-                <div class="product_desc">
-                  <p class="truncate">L'Ouroboros de Razer est une souris haut de gamme 
-                    GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
-                </div>
-                <div class="product_buttons">
-                  <button class="product_heart"><i class="fa fa-heart"></i></button>
-                  <button class="product_compare"><i class="fa fa-random"></i></button>
-                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
-                </div>
-                <button class="add-to-cart">
-                  <div class="default">Payer</div>
-                  <div class="success">Plus</div>
-                  <div class="cart">
-                    <div>
-                      <div></div>
-                      <div></div>
-                    </div>
-                  </div>
-                  <div class="dots"></div>
-                </button>
-              </div>
-            </li>
-            <li class="product_item">
-              <div class="product_sale">
-                <p>À vendre</p>
-              </div>
-              <div class="product_image">
-                <a href="#"><img
-                    src="https://assets.razerzone.com/eeimages/products/5890/razer-blackshark-gallery-4__store_gallery.png"
-                    alt=""></a>
-                <div class="product_buttons">
-                  <button class="product_heart"><i class="fa fa-heart"></i></button>
-                  <button class="product_compare"><i class="fa fa-random"></i></button>
-                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
-                </div>
-              </div>
-              <div class="product_values">
-                <div class="product_title">
-                  <h5>RAZER BLACKSHARK</h5>
-                </div>
-                <div class="product_price">
-                  <a href="#"><span class="price_old"> 50 000 Fcfa</span> <span class="price_new">43 345 Fcfa</span></a>
-                  <span class="product_rating"></span>
-                </div>
-                <div class="product_desc">
-                  <p class="truncate">Le Razer Blackshark 15 (Casque, 
-                    GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
-                </div>
-                <div class="product_buttons">
-                  <button class="product_heart"><i class="fa fa-heart"></i></button>
-                  <button class="product_compare"><i class="fa fa-random"></i></button>
-                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
-                </div>
-                <button class="add-to-cart">
-                  <div class="default">Payer</div>
-                  <div class="success">Plus</div>
-                  <div class="cart">
-                    <div>
-                      <div></div>
-                      <div></div>
-                    </div>
-                  </div>
-                  <div class="dots"></div>
-                </button>
-              </div>
-            </li>
+  </main>
+  <section>
 
+ <!---===================== The container ======================-->
+      <div class="wrapper">
+        <!---===================== The first side left ======================-->
+       <div class="left-side">
+        <div class="side-wrapper">
+         <div class="side-menu">
 
-            <li class="product_item">
-              <div class="product_sale">
-                <p>À vendre</p>
-              </div>
-              <div class="product_image">
-                <a href="#"><img
-                    src="https://overclocking.com/wp-content/uploads/2018/08/Gigabyte-Aorus-M5-1.jpg"
-                    alt=""></a>
-                <div class="product_buttons">
-                  <button class="product_heart"><i class="fa fa-heart"></i></button>
-                  <button class="product_compare"><i class="fa fa-random"></i></button>
-                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
-                </div>
-              </div>
-              <div class="product_values">
-                <div class="product_title">
-                  <h5>RAZER BLACKSHARK</h5>
-                </div>
-                <div class="product_price">
-                  <a href="#"><span class="price_old">46 909 Fcfa</span> <span class="price_new"> 38 750 Fcfa</span></a>
-                  <span class="product_rating"></span>
-                </div>
-                <div class="product_desc">
-                  <p class="truncate">Le Razer Blade (souris, 
-                    GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
-                </div>
-                <div class="product_buttons">
-                  <button class="product_heart"><i class="fa fa-heart"></i></button>
-                  <button class="product_compare"><i class="fa fa-random"></i></button>
-                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
-                </div>
-                <button class="add-to-cart">
-                  <div class="default">Payer</div>
-                  <div class="success">Plus</div>
-                  <div class="cart">
-                    <div>
-                      <div></div>
-                      <div></div>
-                    </div>
-                  </div>
-                  <div class="dots"></div>
-                </button>
-              </div>
-            </li>
+           <!------###-----****** the timing live of the shoppy shop  ******---------->
+           <div class="timing">
+            <div class="container-chrono">
+              <form name="timerPartie">
+                <label for="partie">Top LiveAchat</label>
+                <input type="hidden" name="temps" value="60" />
+              </form>
 
+              <p id="chrono"></p>
+            </div>
+          </div>
 
-            <li class="product_item">
-              <div class="product_sale">
-                <p>À vendre</p>
-              </div>
-              <div class="product_image">
-                <a href="#"><img
-                    src="https://i.ebayimg.com/images/g/ge4AAOSwS4ddGhe-/s-l300.jpg"
-                    alt=""></a>
-                <div class="product_buttons">
-                  <button class="product_heart"><i class="fa fa-heart"></i></button>
-                  <button class="product_compare"><i class="fa fa-random"></i></button>
-                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
-                </div>
-              </div>
-              <div class="product_values">
-                <div class="product_title">
-                  <h5>RAZER BLACKSHARK</h5>
-                </div>
-                <div class="product_price">
-                  <a href="#"><span class="price_old"> 65 908 Fcfa</span> <span class="price_new">50 676 Fcfa</span></a>
-                  <span class="product_rating"></span>
-                </div>
-                <div class="product_desc">
-                  <p class="truncate">Le Razer Blade 15 (Ecran Edge-to-Edge, 
-                    GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
-                </div>
-                <div class="product_buttons">
-                  <button class="product_heart"><i class="fa fa-heart"></i></button>
-                  <button class="product_compare"><i class="fa fa-random"></i></button>
-                  <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
-                </div>
-                <button class="add-to-cart">
-                  <div class="default">Payer</div>
-                  <div class="success">Plus</div>
-                  <div class="cart">
-                    <div>
-                      <div></div>
-                      <div></div>
-                    </div>
-                  </div>
-                  <div class="dots"></div>
-                </button>
-              </div>
-            </li>
+          <div class="side-title">Jours des lives</div>
+          <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>Lundi</a>
+          <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>Mardi</a>
+          <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>Mercredi</a>
+          <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>Jeudi</a>
+          <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>Vendredi</a>
+          <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>Samedi</a>
+          <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>Dimanche</a>
+         </div>
+        </div>
+    <!---===================== The second side left ======================-->
 
-        <!------###-----****** Section 4 : panier-container ******---------->
+        <div class="side-wrapper">
+         <div class="side-menu">
+          <div class="side-title">Les prochains lives</div>
+              <a href="#"><i class="fas fa-tshirt"></i>Téléphone à 2500 Fcfa<span class="day">(L)</span></a>
+              <a href="#"><i class="fas fa-cut"></i>Les meches bresiliennes<span class="day">(M)</span></a>
+              <a href="#"><i class='fas fa-hotdog'></i>Aliments de consommation<span class="day">(M)</span></a>
+              <a href="#"><i class="fas fa-home"></i>Electro-ménager<span class="day">(J)</span></a>
+              <a href="#"><i class="fas fa-car"></i>Automobiles<span class="day">(V)</span></a>
+              <a href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Appareils électroniques<span
+                  class="day">(S)</span></a>
+              <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>Les friperies<span
+                  class="day">(D)</span></a>
+         </div>
+        </div>
+       </div>
+ <!---===================== The main container right ======================-->
+       <div class="main-container">
+          <!---===================== The first profil right : live video Shoppy Shop right ======================-->
+        <div class="profile">
+          <iframe width="100%" height="600" src="https://www.youtube.com/embed/TnF8bz3egPA" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="profile-cover" allowfullscreen></iframe>
+         
+ <!---===================== The second profil : view right ======================-->
+         <div class="profile-contact-info">
+          <div class="profile-contact">
+           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
+            <path d="M10.69 95.16C80.96 154.66 204.26 259.36 240.5 292c4.87 4.4 10.08 6.65 15.5 6.65 5.4 0 10.62-2.22 15.47-6.6 36.27-32.68 159.57-137.4 229.84-196.9a10.66 10.66 0 001.5-14.72A42.36 42.36 0 00469.33 64H42.67A42.36 42.36 0 009.19 80.44a10.66 10.66 0 001.5 14.72z" />
+            <path d="M505.81 127.4a10.62 10.62 0 00-11.37 1.55C416.5 195 317.05 279.69 285.76 307.89c-17.56 15.85-41.94 15.85-59.54-.03-33.36-30.05-145.04-125-208.66-178.91A10.67 10.67 0 000 137.08v268.25A42.7 42.7 0 0042.67 448h426.66A42.7 42.7 0 00512 405.33V137.08c0-4.15-2.42-7.93-6.19-9.67z" /></svg>
+     
+          </div>
+          <div class="profile-contact">
+           <svg viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M453.3 85.3a69.3 69.3 0 11-138.6 0 69.3 69.3 0 01138.6 0zm0 0" />
+            <path d="M384 170.7a85.4 85.4 0 11.2-170.9 85.4 85.4 0 01-.2 170.9zM384 32a53.4 53.4 0 10.1 106.8A53.4 53.4 0 00384 32zm0 0M453.3 426.7a69.3 69.3 0 11-138.6 0 69.3 69.3 0 01138.6 0zm0 0" />
+            <path d="M384 512a85.4 85.4 0 11.2-170.8A85.4 85.4 0 01384 512zm0-138.7a53.4 53.4 0 10.1 106.8 53.4 53.4 0 00-.1-106.8zm0 0M154.7 256A69.3 69.3 0 1116 256a69.3 69.3 0 01138.7 0zm0 0" />
+            <path d="M85.3 341.3a85.4 85.4 0 11.2-170.8 85.4 85.4 0 01-.2 170.8zm0-138.6a53.4 53.4 0 10.2 106.8 53.4 53.4 0 00-.2-106.8zm0 0" />
+            <path d="M135.7 245.8a21.3 21.3 0 01-10.6-40L323.1 93a21.3 21.3 0 1121 37.1L146.3 243c-3.3 1.9-7 2.8-10.5 2.8zm0 0M333.6 421.8c-3.6 0-7.2-1-10.5-2.8L125 306a21.4 21.4 0 0121.2-37l198 112.8a21.4 21.4 0 01-10.7 39.9zm0 0" /></svg>
+          </div>
+          <div class="profile-contact">
+           <svg viewBox="0 0 515.6 515.6" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M496.7 212.2a64.4 64.4 0 11-91.2 91.1 64.4 64.4 0 0191.2-91M303.3 212.2a64.4 64.4 0 11-91 91.1 64.4 64.4 0 0191-91M110 212.2A64.4 64.4 0 1119 303.3a64.4 64.4 0 0191.1-91" /></svg>
+          </div>
+         </div>
+         <div class="profile-info">
+          <div class="profile-item">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 469.33 469.33" fill="currentColor">
+            <path d="M320 213.33c35.3 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 213.33c35.31 0 63.79-28.69 63.79-64 0-35.3-28.48-64-63.79-64-35.3 0-64 28.7-64 64 0 35.31 28.7 64 64 64zM149.33 256C99.52 256 0 280.96 0 330.67V384h298.67v-53.33c0-49.71-99.52-74.67-149.34-74.67zM320 256c-6.19 0-13.12.43-20.59 1.17 24.75 17.82 41.92 41.82 41.92 73.5V384h128v-53.33c0-49.71-99.52-74.67-149.33-74.67z" /></svg>
+           1,702
+          </div>
+          <div class="profile-item">
+           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 469.33 469.33">
+            <path d="M234.67 170.67c-35.31 0-64 28.69-64 64s28.69 64 64 64 64-28.7 64-64-28.7-64-64-64z" />
+            <path d="M234.67 74.67C128 74.67 36.9 141 0 234.67c36.9 93.65 128 160 234.67 160 106.77 0 197.76-66.35 234.66-160-36.9-93.66-127.89-160-234.66-160zm0 266.66c-58.88 0-106.67-47.78-106.67-106.66S175.79 128 234.67 128s106.66 47.79 106.66 106.67-47.78 106.66-106.66 106.66z" /></svg>
+           1,503
+          </div>
+          <div class="profile-item">
+           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 475.43 475.43">
+            <path d="M306.9 164.57l78.9-86.2a7.83 7.83 0 001.56-8.36 8.36 8.36 0 00-7.3-4.7h-253.4s-3.13 0-3.13.52v-9.4a26.12 26.12 0 0021.94-27.7A28.73 28.73 0 00117.26 0a29.78 29.78 0 00-29.78 28.73 30.82 30.82 0 0020.37 27.7v411.16a7.84 7.84 0 0015.68 0V263.84h256.52c3.2.2 6.17-1.7 7.31-4.7a8.36 8.36 0 00-1.56-8.36l-78.9-86.2z" /></svg>
+           Sep 21
+          </div>
+          <div class="profile-item">
+           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 411.14 411.14">
+            <path d="M350.2 54.53H61.45C27.64 54.53 0 82.18 0 115.97v179.2c0 33.8 27.65 61.44 61.44 61.44H349.7c33.79 0 61.44-27.65 61.44-61.44v-179.2c.5-33.8-27.14-61.44-60.93-61.44zM287.75 210.7a11.96 11.96 0 01-3.58 3.59l-119.3 70.65a9.93 9.93 0 01-13.82-3.58 8.65 8.65 0 01-1.54-5.12V134.92c0-5.64 4.61-10.24 10.24-10.24 1.54 0 3.59.5 5.12 1.53l119.3 70.66c4.6 3.07 6.66 9.21 3.58 13.82z" /></svg>
+           234
+          </div>
+         </div>
+          <!---===================== The third profil right :  profil menu ======================-->
+         <div class="profile-menu">
+          <div class="profile-avatar">
+           <img class="profile-img" src="data:image/jpeg;base64,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" alt="">
+           <div class="profile-name">Lydéric AGBODE</div>
+          </div>
+          <div class="menu-items">
+            <a target="_blank" href="#" class="explore-button-call-payer"><i class="fa fa-money" aria-hidden="true"><span class="payer">Payer maintenant</span></i></a>
+          </div>
+          <div class="follow-buttons">
+           <button class="follow">Appeler nous !</button>
+           <button class="follow follow-option"><a target="_blank" href="#" class="explore-button-call"><i class="fa fa-phone" aria-hidden="true"><span class="appele">077762556</span></i></a></button>
+          </div>
+         </div>
+        </div>
+
+        
+</section>
+  <section>
+     <!------###-----****** Section 3 : panier-container ******---------->
+     <h1 class="title-panier">LES OFFRES À NE PAS MANQUER !</h1>
+     <div class="panier-container">
+       <div class="market">
+         <div class="product_grid">
+           <ul class="product_list list">
+             <li class="product_item">
+               <div class="product_sale">
+                 <p>À vendre</p>
+               </div>
+               <div class="product_image">
+                 <a href="#"><img
+                     src="https://media.jumiadeals.com/ci_live/4668c22de55f070a1a8c5de.desktop-gallery-large.jpg"
+                     alt=""></a>
+                 <div class="product_buttons">
+                   <button class="product_heart"><i class="fa fa-heart"></i></button>
+                   <button class="product_compare"><i class="fa fa-random"></i></button>
+                   <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                 </div>
+               </div>
+               <div class="product_values">
+                 <div class="product_title">
+                   <h5>RAZER BLADE - FULL HD</h5>
+                 </div>
+                 <div class="product_price">
+                   <a href="#"><span class="price_old"> 10 000 Fcfa</span> <span class="price_new">7000 Fcfa</span></a>
+                   <span class="product_rating"></span>
+                 </div>
+                 <div class="product_desc">
+                   <p class="truncate">Le Razer Blade 15 (Ecran Edge-to-Edge,
+                     GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)
+                   </p>
+                 </div>
+                 <div class="product_buttons">
+                   <button class="product_heart"><i class="fa fa-heart"></i></button>
+                   <button class="product_compare"><i class="fa fa-random"></i></button>
+                   <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                 </div>
+                 <button class="add-to-cart">
+                   <div class="default">Payer</div>
+                   <div class="success">Plus</div>
+                   <div class="cart">
+                     <div>
+                       <div></div>
+                       <div></div>
+                     </div>
+                   </div>
+                   <div class="dots"></div>
+                 </button>
+               </div>
+             </li>
+             <li class="product_item">
+               <div class="product_sale">
+                 <p>À vendre</p>
+               </div>
+               <div class="product_image">
+                 <a href="#"><img
+                     src="https://assets.razerzone.com/eeimages/products/752/razer-ouroboros-gallery-3__store_gallery.png"
+                     alt=""></a>
+                 <div class="product_buttons">
+                   <button class="product_heart"><i class="fa fa-heart"></i></button>
+                   <button class="product_compare"><i class="fa fa-random"></i></button>
+                   <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                 </div>
+               </div>
+               <div class="product_values">
+                 <div class="product_title">
+                   <h5>RAZER OUROBOROS</h5>
+                 </div>
+                 <div class="product_price">
+                   <a href="#"><span class="price_old">4 500 Fcfa</span> <span class="price_new"> 3 000 Fcfa</span></a>
+                   <span class="product_rating"></span>
+                 </div>
+                 <div class="product_desc">
+                   <p class="truncate">L'Ouroboros de Razer est une souris haut de gamme
+                     GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
+                 </div>
+                 <div class="product_buttons">
+                   <button class="product_heart"><i class="fa fa-heart"></i></button>
+                   <button class="product_compare"><i class="fa fa-random"></i></button>
+                   <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                 </div>
+                 <button class="add-to-cart">
+                   <div class="default">Payer</div>
+                   <div class="success">Plus</div>
+                   <div class="cart">
+                     <div>
+                       <div></div>
+                       <div></div>
+                     </div>
+                   </div>
+                   <div class="dots"></div>
+                 </button>
+               </div>
+             </li>
+             <li class="product_item">
+               <div class="product_sale">
+                 <p>À vendre</p>
+               </div>
+               <div class="product_image">
+                 <a href="#"><img
+                     src="https://assets.razerzone.com/eeimages/products/5890/razer-blackshark-gallery-4__store_gallery.png"
+                     alt=""></a>
+                 <div class="product_buttons">
+                   <button class="product_heart"><i class="fa fa-heart"></i></button>
+                   <button class="product_compare"><i class="fa fa-random"></i></button>
+                   <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                 </div>
+               </div>
+               <div class="product_values">
+                 <div class="product_title">
+                   <h5>RAZER BLACKSHARK</h5>
+                 </div>
+                 <div class="product_price">
+                   <a href="#"><span class="price_old"> 12 000 Fcfa</span> <span class="price_new">8 056 Fcfa</span></a>
+                   <span class="product_rating"></span>
+                 </div>
+                 <div class="product_desc">
+                   <p class="truncate">Le Razer Blackshark 15 (Casque,
+                     GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
+                 </div>
+                 <div class="product_buttons">
+                   <button class="product_heart"><i class="fa fa-heart"></i></button>
+                   <button class="product_compare"><i class="fa fa-random"></i></button>
+                   <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                 </div>
+                 <button class="add-to-cart">
+                   <div class="default">Payer</div>
+                   <div class="success">Plus</div>
+                   <div class="cart">
+                     <div>
+                       <div></div>
+                       <div></div>
+                     </div>
+                   </div>
+                   <div class="dots"></div>
+                 </button>
+               </div>
+             </li>
+ 
+ 
+             <li class="product_item">
+               <div class="product_sale">
+                 <p>À vendre</p>
+               </div>
+               <div class="product_image">
+                 <a href="#"><img src="https://overclocking.com/wp-content/uploads/2018/08/Gigabyte-Aorus-M5-1.jpg"
+                     alt=""></a>
+                 <div class="product_buttons">
+                   <button class="product_heart"><i class="fa fa-heart"></i></button>
+                   <button class="product_compare"><i class="fa fa-random"></i></button>
+                   <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                 </div>
+               </div>
+               <div class="product_values">
+                 <div class="product_title">
+                   <h5>RAZER BLACKSHARK</h5>
+                 </div>
+                 <div class="product_price">
+                   <a href="#"><span class="price_old">16 750 Fcfa</span> <span class="price_new"> 10 065 Fcfa</span></a>
+                   <span class="product_rating"></span>
+                 </div>
+                 <div class="product_desc">
+                   <p class="truncate">Le Razer Blade (souris,
+                     GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
+                 </div>
+                 <div class="product_buttons">
+                   <button class="product_heart"><i class="fa fa-heart"></i></button>
+                   <button class="product_compare"><i class="fa fa-random"></i></button>
+                   <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                 </div>
+                 <button class="add-to-cart">
+                   <div class="default">Payer</div>
+                   <div class="success">Plus</div>
+                   <div class="cart">
+                     <div>
+                       <div></div>
+                       <div></div>
+                     </div>
+                   </div>
+                   <div class="dots"></div>
+                 </button>
+               </div>
+             </li>
+ 
+ 
+             <li class="product_item">
+               <div class="product_sale">
+                 <p>À vendre</p>
+               </div>
+               <div class="product_image">
+                 <a href="#"><img src="https://i.ebayimg.com/images/g/ge4AAOSwS4ddGhe-/s-l300.jpg" alt=""></a>
+                 <div class="product_buttons">
+                   <button class="product_heart"><i class="fa fa-heart"></i></button>
+                   <button class="product_compare"><i class="fa fa-random"></i></button>
+                   <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                 </div>
+               </div>
+               <div class="product_values">
+                 <div class="product_title">
+                   <h5>RAZER BLACKSHARK</h5>
+                 </div>
+                 <div class="product_price">
+                   <a href="#"><span class="price_old">18 000 Fcfa</span> <span class="price_new">11 897 Fcfa</span></a>
+                   <span class="product_rating"></span>
+                 </div>
+                 <div class="product_desc">
+                   <p class="truncate">Le Razer Blade 15 (Ecran Edge-to-Edge,
+                     GeForce GTX 1070 Max-Q, 8th Gen Intel Core i7, 256 GB SSD, RGB Chroma Eclairage & AZERTY-Layout)</p>
+                 </div>
+                 <div class="product_buttons">
+                   <button class="product_heart"><i class="fa fa-heart"></i></button>
+                   <button class="product_compare"><i class="fa fa-random"></i></button>
+                   <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                 </div>
+                 <button class="add-to-cart">
+                   <div class="default">Payer</div>
+                   <div class="success">Plus</div>
+                   <div class="cart">
+                     <div>
+                       <div></div>
+                       <div></div>
+                     </div>
+                   </div>
+                   <div class="dots"></div>
+                 </button>
+               </div>
+             </li>
+ 
+ <!------###-----****** Section 4 : panier-container ******---------->
 
         <div class="panier-container choice-panier">
           <div class="market">
@@ -477,7 +626,7 @@
                       <h5>Samsung AMOLED</h5>
                     </div>
                     <div class="product_price">
-                      <a href="#"><span class="price_old">29 789 Fcfa</span> <span class="price_new">20 230 Fcfa</span></a>
+                      <a href="#"><span class="price_old">10 789 Fcfa</span> <span class="price_new">9 500 Fcfa</span></a>
                       <span class="product_rating"></span>
                     </div>
                     <div class="product_desc">
@@ -521,7 +670,7 @@
                       <h5>HP Spectre X360</h5>
                     </div>
                     <div class="product_price">
-                      <a href="#"><span class="price_old">879 099 Fcfa</span> <span class="price_new">698 990 Fcfa</span></a>
+                      <a href="#"><span class="price_old">60 000 Fcfa</span> <span class="price_new">40 400 Fcfa</span></a>
                       <span class="product_rating"></span>
                     </div>
                     <div class="product_desc">
@@ -565,7 +714,7 @@
                       <h5>HP Spectre Folio</h5>
                     </div>
                     <div class="product_price">
-                      <a href="#"><span class="price_old">710 000 Fcfa</span> <span class="price_new">505 780 Fcfa</span></a>
+                      <a href="#"><span class="price_old">20 890 Fcfa</span> <span class="price_new">17 900 Fcfa</span></a>
                       <span class="product_rating"></span>
                     </div>
                     <div class="product_desc">
@@ -608,7 +757,7 @@
                       <h5>Leica M10-R</h5>
                     </div>
                     <div class="product_price">
-                      <a href="#"><span class="price_old">599 890 Fcfa</span> <span class="price_new">320 000 Fcfa</span></a>
+                      <a href="#"><span class="price_old">59 789 Fcfa</span> <span class="price_new">30 000 Fcfa</span></a>
                       <span class="product_rating"></span>
                     </div>
                     <div class="product_desc">
@@ -635,107 +784,506 @@
                   </div>
                 </li>
 
-              </ul>
+   <!-- section -->
+
+   <section id="cont-circle">
+    <div class="slick-slider">
+
+
+      <div id="circle-shape-example">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTAsJN7hfJFJi98m5xmqAMw2nGDvVSSULQ3vQ&usqp=CAU"
+          alt="A photograph of sliced kiwifruit on a while plate" class="curve">
+        <h1>Ailihen Ms300</h1>
+
+        <p>Ailihen Ms300 Écouteurs stéréo Pliable Casque Filaire pour iPhone iPad iPod Smartphone Android
+          pour Ordinateur Portable Tablette PC Ordinateur Rose Gold Micro casques PC
+          : originally called “yang tao”, “melonette” or Chinese gooseberry. Cultivated in its fuzzy
+          variety from Chinese imports, the fruit proved popular with American military servicemen stationed
+          in New
+          Zealand during World War II, with commercial export to the United States starting after the end of
+          the war.
+          In California, the fruit was rebranded as “kiwifruit” due to its resemblance to New Zealand’s
+          national bird.
+          However, it is not a “kiwi”, which is also the demonym for native New Zealanders. Saying “I’m going
+          to eat a kiwi”
+          implies that you are either a cannibal or planning to dine on an endangered flightless</p>
+        <a target="_blank" href="#" class="explore-button-circle">Dépenser au meilleur prix à partir de <span class="visible-color">5 000 Fcfa</span></a>
+      </div>
+  </section>
+            <!---===================== The header ======================-->
+           
+            <div id="slider" class="section main_slider">
+              <div class="container-fuild">
+                <div class="row">
+                  <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
+                    data-alias="classicslider1"
+                    style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+                    <!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
+                    <div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none;"
+                      data-version="5.0.7">
+                      <ul>
+                        <li data-index="rs-1812" data-transition="zoomin" data-slotamount="7"
+                          data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
+                          data-thumb="images/it_service/slide1.jpg" data-rotate="0" data-saveperformance="off"
+                          data-title="Computer Services" data-description="">
+                          <!-- MAIN IMAGE -->
+                          <img src="images/it_service/slide1.jpg" alt="#" data-bgposition="center center"
+                            data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100"
+                            data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
+                            data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                          <!-- LAYERS -->
+                          <!-- LAYER NR. BG -->
+                          <div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0"
+                            id="slide-270-layer-1012" data-x="['center','center','center','center']"
+                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['0','0','0','0']" data-width="full" data-height="full"
+                            data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="s:300;s:300;"
+                            data-start="750" data-basealign="slide" data-responsive_offset="on" data-responsive="off"
+                            style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);">
+                          </div>
+                          <!-- LAYER NR. 1 -->
+                          <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
+                            id="slide-18-layer-912" data-x="['center','center','center','center']"
+                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['15','15','15','15']" data-width="500" data-height="140"
+                            data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="2000"
+                            data-responsive_offset="on"
+                            style="z-index: 5;background-color:rgba(29, 29, 29, 0.85);border-color:rgba(0, 0, 0, 0.50);">
+                          </div>
+                          <!-- LAYER NR. 2 -->
+                          <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0"
+                            id="slide-18-layer-112" data-x="['center','center','center','center']"
+                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','35']"
+                            data-lineheight="['70','70','70','50']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000"
+                            data-splitin="chars" data-splitout="none" data-responsive_offset="on"
+                            data-elementdelay="0.05" style="z-index: 6; white-space: nowrap;">Bienvenue chez Shoppy Shop
+                          </div>
+                          <!-- LAYER NR. 3 -->
+                          <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0"
+                            id="slide-18-layer-412" data-x="['center','center','center','center']"
+                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['52','51','51','31']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                            style="z-index: 7; white-space: nowrap;">Ne ratez rien de nos lives </div>
+                        </li>
+                        <li data-index="rs-181" data-transition="zoomin" data-slotamount="7"
+                          data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
+                          data-thumb="images/it_service/slide2.png" data-rotate="0" data-saveperformance="off"
+                          data-title="Easy To Use & Customize" data-description="">
+                          <!-- MAIN IMAGE -->
+                          <img src="images/it_service/slide2.png" alt="" data-bgposition="center center"
+                            data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100"
+                            data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
+                            data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                          <!-- LAYERS -->
+                          <!-- LAYER NR. BG -->
+                          <div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0" id="slide-270-layer-101"
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                            data-width="full" data-height="full" data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="s:300;s:300;"
+                            data-start="750" data-basealign="slide" data-responsive_offset="on" data-responsive="off"
+                            style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);">
+                          </div>
+                          <!-- LAYER NR. 1 -->
+                          <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
+                            id="slide-18-layer-91" data-x="['center','center','center','center']"
+                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['15','15','15','15']" data-width="500" data-height="140"
+                            data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="2000"
+                            data-responsive_offset="on"
+                            style="z-index: 5;background-color:rgba(29, 29, 29, 0.85);border-color:rgba(0, 0, 0, 0.50);">
+                          </div>
+                          <!-- LAYER NR. 2 -->
+                          <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0"
+                            id="slide-18-layer-11" data-x="['center','center','center','center']"
+                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','35']"
+                            data-lineheight="['70','70','70','50']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000"
+                            data-splitin="chars" data-splitout="none" data-responsive_offset="on"
+                            data-elementdelay="0.05" style="z-index: 6; white-space: nowrap;">Chez Shoppy Shop </div>
+                          <!-- LAYER NR. 3 -->
+                          <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0"
+                            id="slide-18-layer-41" data-x="['center','center','center','center']"
+                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['52','51','51','31']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                            style="z-index: 7; white-space: nowrap;">Nous sommes à votre disposition </div>
+                        </li>
+                        <li data-index="rs-18" data-transition="zoomin" data-slotamount="7"
+                          data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
+                          data-thumb="images/it_service/slide3.jpg" data-rotate="0" data-saveperformance="off"
+                          data-title="Perfectly Responsive" data-description="">
+                          <!-- MAIN IMAGE -->
+                          <img src="images/it_service/slide3.jpg" alt="" data-bgposition="center center"
+                            data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100"
+                            data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
+                            data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                          <!-- LAYERS -->
+                          <!-- LAYER NR. BG -->
+                          <div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0" id="slide-270-layer-10"
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                            data-width="full" data-height="full" data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="s:300;s:300;"
+                            data-start="750" data-basealign="slide" data-responsive_offset="on" data-responsive="off"
+                            style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0.50);">
+                          </div>
+                          <!-- LAYER NR. 1 -->
+                          <div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
+                            id="slide-18-layer-9" data-x="['center','center','center','center']"
+                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['15','15','15','15']" data-width="500" data-height="140"
+                            data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="2000"
+                            data-responsive_offset="on"
+                            style="z-index: 5;background-color:rgba(29, 29, 29, 0.85);border-color:rgba(0, 0, 0, 0.50);">
+                          </div>
+                          <!-- LAYER NR. 2 -->
+                          <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0"
+                            id="slide-18-layer-1" data-x="['center','center','center','center']"
+                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','35']"
+                            data-lineheight="['70','70','70','50']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000"
+                            data-splitin="chars" data-splitout="none" data-responsive_offset="on"
+                            data-elementdelay="0.05" style="z-index: 6; white-space: nowrap;">Shoppy Shop Live </div>
+                          <!-- LAYER NR. 3 -->
+                          <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0"
+                            id="slide-18-layer-4" data-x="['center','center','center','center']"
+                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['52','51','51','31']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                            style="z-index: 7; white-space: nowrap;">Shoppy Shop chrono</div>
+                        </li>
+                      </ul>
+                      <div class="tp-static-layers"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- end section -->
+  </section>
+
+
+  <!------###-----****** more-panier : slick-slider 1 ******---------->
+  <section>
+    <div class="slick-slider">
+      <li>
+        <div class="full-card">
+
+          <div class="font-card robotoslab-card">
           </div>
 
-  </main>
-  <!-------------###-----****** Button back to top ******-----###------------>
-  <button id="back-to-top-btn">
-    <i class="fas fa-angle-double-up"></i>
-  </button>
-<!-------------###-----****** Newsletter ******-----###------------>
-<div id="newsletter">
-<div class="container-news">
-	<div class="row">
-        <div class="col-md-4">
-    		<div class="thumbnail center well well-sm text-center">
-                <h2>Newsletter</h2>
-                
-                <p class="text-news">INSCRIVEZ-VOUS À NOTRE NEWSLETTER</p>
-                
-                <form action="" method="post" role="form">
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <i class="fa fa-envelope"></i>
-                      </span>
-                      <input class="form-control" type="text" id="" name="" placeholder="votre@email.com">
-                    </div>
-                    <input type="submit" value="Souscrire" class="btn btn-large btn-primary" />
-              </form>
-            </div>    
+          <div class="font-description">
+            <h2 class="font--robotoslab">Vous pensez avoir manquez plein de chose durant le live, c'est pas grave !</h2>
+            <p class="font--roboto">Nous avons d'autres belles surprises pour vous ici !</p>
+
+            <a target="_blank" href="#" class="explore-button">Trouvez votre article à partir de <span class="visible-color">4 000 Fcfa</span></a>
+
+          </div>
+
         </div>
-	</div>
-</div>
-</div>
 
-  <!----****** footer ******---->
-  <footer class="footer-distributed">
-    <div class="footer-left">
-      <div class="logo shoppy">
-        <a href="index.html"><img src="assets/shoppyshop.png"></a>
-      </div>
-
-      <p class="footer-links">
-        <a href="#" class="link-1">Home</a>
-
-        <a href="#">Blog</a>
-
-        <a href="#">Tarification</a>
-
-        <a href="#">A propos</a>
-
-        <a href="#">FAQ</a>
-
-        <a href="#">Contact</a>
-      </p>
-
-      <p class="footer-company-name">SHOPPY SHOP © 2020</p>
     </div>
+    </li>
 
-    <div class="footer-center">
 
-      <div>
-        <i class="fas fa-map-marker"></i>
-        <p><span>444 ga. Libreville Gabon</span> Libreville, Akanda</p>
-      </div>
+    </div>
+  </section>
 
-      <div>
-        <i class="fas fa-phone"></i>
-        <p>+3.908.767.002</p>
-      </div>
-
-      <div>
-        <i class="fas fa-envelope"></i>
-        <p><a href="shoppyshop@gmail.com">shoppyshop@gmail.com</a></p>
+<!-------------###-----****** Button back to top ******-----###------------>
+<button id="back-to-top-btn">
+  <i class="fas fa-angle-double-up"></i>
+</button>
+<!-------------###-----****** Newsletter ******-----###------------>
+  <!-- End Model search bar -->
+  <!-- footer -->
+  <footer class="footer_style_2">
+    <div class="container-fuild">
+      <div class="row">
+        <div class="map_section">
+          <div id="map"></div>
+        </div>
+        <div class="footer_blog">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="main-heading left_text">
+                <h2>Shoppy Shop</h2>
+              </div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nihil numquam itaque accusamus facere
+                dignissimos quibusdam laboriosam exercitationem aperiam, doloribus quia ducimus velit, dolores
+                consequatur
+                incidunt dolorem maxime reprehenderit commodi!</p>
+              <ul class="social_icons">
+                <li class="social-icon fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-icon tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="social-icon gp"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <div class="main-heading left_text">
+                <h2>Les liens additionalles</h2>
+              </div>
+              <ul class="footer-menu">
+                <li><a href="#"><i class="fa fa-angle-right"></i> Les conditions d'utilisation</a>
+                </li>
+                <li><a href="#"><i class="fa fa-angle-right"></i> Propriété privée</a></li>
+                <li><a href="#"><i class="fa fa-angle-right"></i> Panier</a></li>
+                <li><a href="#"><i class="fa fa-angle-right"></i> Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <div class="main-heading left_text">''
+                <h2>Services</h2>
+              </div>
+              <ul class="footer-menu">
+                <li><a href="#"><i class="fa fa-angle-right"></i> Les Données</a></li>
+                <li><a href="#"><i class="fa fa-angle-right"></i> Localisation</a></li>
+                <li><a href="#"><i class="fa fa-angle-right"></i> Mobile service</a></li>
+                <li><a href="#"><i class="fa fa-angle-right"></i> Network solutions</a></li>
+                <li><a href="#"><i class="fa fa-angle-right"></i> Technical support</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <div class="main-heading left_text">
+                <h2>Contactez-nous</h2>
+              </div>
+              <p>Libreville, Gabon<br>
+                <span style="font-size:18px;"><a href="tel:+241 77 76 25 56">+241 77 76 25 56</a></span></p>
+              <div class="footer_mail-section">
+                <form>
+                  <fieldset>
+                    <div class="field">
+                      <input placeholder="Email" type="text">
+                      <button class="button_custom"><i class="fa fa-envelope" aria-hidden="true"></i></button>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cprt">
+          <p>Shoppy Shop Copyright © Septembre 2020 Tous droits réservés - Toute réproduction interdite
+          </p>
+        </div>
       </div>
     </div>
-
-    <div class="footer-right">
-      <p class="footer-company-about">
-        <span>Shoppy Shop</span>
-        Shoppy Shop est une émission de téléachat qui vend en masse les
-        produits en promotion des entreprises.
-      </p>
-      <div class="footer-icons">
-        <a href="#" class="fab fa-facebook"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-linkedin"></a>
-        <a href="#" class="fab fa-github"></a>
-        <a href="#" class="fab fa-youtube"></a>
-      </div>
-    </div>
-
   </footer>
-  <!-------------###-----****** JS ******-----###------------>
-  <script src="js/top.js"></script>
-  <script src="js/count.js"></script>
-  <script src="js/chrono.js"></script>
-  <script src="js/form.js"></script>
+  <!-- end footer -->
+  <!-- js section -->
+  <script src="js/panier.js"></script>
+  <script src="js/news.js"></script>
   <script src="js/button.js"></script>
-  <script src="js/slide.js"></script>
+  <script src="js/more-panier.js"></script>
+  <script src="js/chrono.js"></script>
+  <script src="js/comment.js"></script>
   <script src="js/back.js"></script>
+  <!------Js other section ------>
 
+  <!--------------Files Js section-------------->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- menu js -->
+  <script src="js/menumaker.js"></script>
+  <!-- wow animation -->
+  <script src="js/wow.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- revolution js files -->
+  <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+  <script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+  <script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+  <script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+  <!-- map js -->
+  <script>
+    // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+    // Australia.
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 11,
+        center: { lat: 40.645037, lng: -73.880224 },
+        styles: [
+          {
+            elementType: 'geometry',
+            stylers: [{ color: '#fefefe' }]
+          },
+          {
+            elementType: 'labels.icon',
+            stylers: [{ visibility: 'off' }]
+          },
+          {
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#616161' }]
+          },
+          {
+            elementType: 'labels.text.stroke',
+            stylers: [{ color: '#f5f5f5' }]
+          },
+          {
+            featureType: 'administrative.land_parcel',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#bdbdbd' }]
+          },
+          {
+            featureType: 'poi',
+            elementType: 'geometry',
+            stylers: [{ color: '#eeeeee' }]
+          },
+          {
+            featureType: 'poi',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#757575' }]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'geometry',
+            stylers: [{ color: '#e5e5e5' }]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#9e9e9e' }]
+          },
+          {
+            featureType: 'road',
+            elementType: 'geometry',
+            stylers: [{ color: '#eee' }]
+          },
+          {
+            featureType: 'road.arterial',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#3d3523' }]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry',
+            stylers: [{ color: '#eee' }]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#616161' }]
+          },
+          {
+            featureType: 'road.local',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#9e9e9e' }]
+          },
+          {
+            featureType: 'transit.line',
+            elementType: 'geometry',
+            stylers: [{ color: '#e5e5e5' }]
+          },
+          {
+            featureType: 'transit.station',
+            elementType: 'geometry',
+            stylers: [{ color: '#000' }]
+          },
+          {
+            featureType: 'water',
+            elementType: 'geometry',
+            stylers: [{ color: '#c8d7d4' }]
+          },
+          {
+            featureType: 'water',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#b1a481' }]
+          }
+        ]
+      });
+
+      var image = 'images/it_service/location_icon_map_cont.png';
+      var beachMarker = new google.maps.Marker({
+        position: { lat: 40.645037, lng: -73.880224 },
+        map: map,
+        icon: image
+      });
+    }
+  </script>
+
+
+
+  <script>
+    $(document).ready(function () {
+      $('.slider-2')._TMS({
+        show: 0,
+        pauseOnHover: true,
+        prevBu: '.prev',
+        nextBu: '.next',
+        playBu: false,
+        duration: 500,
+        preset: 'fade',
+        pagination: true, //'.pagination',true,'<ul></ul>'
+        pagNums: false,
+        slideshow: 8000,
+        numStatus: false,
+        banners: 'fromBottom', // fromLeft, fromRight, fromTop, fromBottom
+        waitBannerAnimation: false,
+        progressBar: false
+      })
+    })
+    $(function () {
+      if ($(window).width() <= 1066) {
+        $("#slider-2 .prev").css("left", "55px")
+        $("#slider-2 .next").css("right", "55px")
+      }
+    })
+  </script>
+
+  <!-- google map js -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+  <!-- end google map js -->
 </body>
 
 </html>

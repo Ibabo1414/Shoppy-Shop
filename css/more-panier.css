@@ -1,0 +1,282 @@
+.font--robotoslab {
+    font-family: 'Roboto Slab', Georgia, serif;
+    font-weight: 700;
+}
+.font--roboto {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.70em;
+}
+.font--lobster {
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+.font--cabin {
+    font-family: 'Cabin', Arial, sans-serif;
+    font-weight: 400;
+}
+.font--eczar {
+    font-family: 'Eczar', Georgia, serif;
+    font-weight: 700;
+}
+.font--gentium {
+    font-family: 'Gentium Basic', Georgia, serif;
+    font-weight: 400;
+}
+
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    font-weight: normal;
+}
+h2 {
+    font-size: 1.70em;
+    margin: 0;
+    font-weight: normal;
+}
+h3 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: normal;
+}
+h4 {
+    font-size: 2.125em;
+    margin: 0;
+    font-weight: normal;
+}
+h5 {
+    font-size: 1.75em;
+    margin: 0;
+    font-weight: normal;
+}
+h6 {
+    font-size: 1.25em;
+    margin: 0;
+    font-weight: normal;
+}
+
+.author {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    color: #999;
+}
+.author a {
+    color: #a1bee6;
+    text-decoration: none;
+}
+.author a:hover {
+    color: #327ccb;
+}
+.bx-viewport {
+    overflow: visible !important;
+}
+.bx-pager {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    outline: 0;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: rgba(0, 0, 0, 0.7);
+}
+.full-card {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 60px;
+    height: 80vh;
+    max-height: 600px;
+    /*background: white;*/
+    width: 90%;
+    max-width: 1300px;
+    /*box-shadow:  0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 55px 50px -35px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);*/
+}
+.font-card {
+    position: relative;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(45deg, rgba(159, 190, 230, 1) 0%, rgba(223, 234, 238, 1) 100%);
+    padding: 20px 20px;
+    color: white;
+    margin: 0 15px;
+    text-align: center;
+    box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 55px 50px -35px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s, transform 0.3s;
+    transition-delay: 0.15s;
+}
+.font-card.hovered-card {
+    box-shadow: 0 5px 3px -5px rgba(0, 0, 0, 0.3), 0 2px 8px -5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+.font-card p {
+    line-height: 1.4;
+}
+.font-description {
+    padding: 0 30px;
+    padding-bottom: 5em;
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.font-description h2 {
+    color: #56575e;
+}
+.font-description h2 span {
+    color: #d2d2d2;
+}
+.font-description p {
+    padding-left: 15px;
+    color: #777;
+    line-height: 1.8;
+}
+.font-description p:before {
+    content: "\2014";
+    margin-left: -15px;
+    margin-right: 4px;
+}
+.explore-button {
+    font-size: 12px;
+    background:  rgb(224, 109, 14);
+    width: 80%;
+    font-weight: bolder;
+    color: #fbfafa;
+    display: inline-block;
+    padding: 1em;
+    margin-top: 2em;
+    border-radius: 5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.15em;
+    box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);
+    transition: color 0.6s, box-shadow 0.3s, transform 0.3s;
+}
+.explore-button:hover {
+    box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1px);
+    color: #ffffff;
+}
+
+@media screen and (min-width:300px) and (max-width:359px)  {
+    .slick-slider{
+        margin-bottom: 5em;
+    }
+    .robotoslab-card {
+        background: url(https://image.freepik.com/photos-gratuite/travail-personne-confiante-bonne-humeur-assez_1098-4672.jpg) no-repeat center center;
+        background-size: cover;
+        width: 100em;
+        height: 10em;
+        padding: 5em 8em;
+        margin-bottom: 2em;
+        /*border: 1px solid rgb(204, 201, 201);*/
+    }
+    .font-description {
+        width: 90%;
+
+    }
+
+    h2.font--robotoslab {
+        font-size: 9px;
+        text-align: justify;
+        letter-spacing: -0.1em;
+    }
+    p.font--roboto {
+        font-size: 13px;
+    }
+    .explore-button {
+        font-size: 12px;
+        background:  rgb(224, 109, 14);
+        width: 18em;
+        margin-left: -3.50em;
+    }
+	  }
+@media screen and (min-width:360px) and (max-width:768px)  {
+    .slick-slider{
+        margin-bottom: 5em;
+    }
+    .robotoslab-card {
+        background: url(https://image.freepik.com/photos-gratuite/travail-personne-confiante-bonne-humeur-assez_1098-4672.jpg) no-repeat center center;
+        background-size: cover;
+        width: 100em;
+        height: 10em;
+        padding: 5em 8em;
+        margin-bottom: 2em;
+        /*border: 1px solid rgb(204, 201, 201);*/
+    }
+    .font-description {
+        width: 70%;
+
+    }
+
+    h2.font--robotoslab {
+        font-size: 15px;
+    }
+    p.font--roboto {
+        font-size: 13px;
+    }
+    .explore-button {
+        font-size: 12px;
+        background:  rgb(224, 109, 14);
+        width: 18em;
+        margin-left: -3.50em;
+    }
+	  }
+
+@media screen and (max-width: 991px) {
+    .full-card {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 30px 60px;
+   }
+    .font-card {
+        width: calc(50% - 30px);
+   }
+    .font-description {
+        width: 100%;
+   }
+}
+.robotoslab-card {
+    background: url(https://image.freepik.com/photos-gratuite/travail-personne-confiante-bonne-humeur-assez_1098-4672.jpg) no-repeat center center;
+    background-size: cover;
+    width: 70%;
+    /*border: 1px solid rgb(204, 201, 201);*/
+}
+.roboto-card {
+    background: url(https://res.cloudinary.com/dqj168cdc/image/upload/v1480287191/robot-image_iai6lv.jpg) no-repeat center center;
+    background-size: cover;
+}
+.lobster-card {
+    background: url(https://res.cloudinary.com/dqj168cdc/image/upload/v1480349796/lobster-image_pznrao.jpg) no-repeat center center;
+    background-size: cover;
+}
+.cabin-card {
+    background: url(https://res.cloudinary.com/dqj168cdc/image/upload/v1480350297/cabin-image_dqxlwi.jpg) no-repeat center center;
+    background-size: cover;
+}
+.eczar-card {
+    background: url(https://res.cloudinary.com/dqj168cdc/image/upload/v1480522564/turtle-image_nblim1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.gentium-card {
+    background: url(https://res.cloudinary.com/dqj168cdc/image/upload/v1480522983/penguin-image_dufrwg.jpg) no-repeat center center;
+    background-size: cover;
+}

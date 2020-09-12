@@ -1,0 +1,20 @@
+{
+  "short_name": "Shoppy Shop",
+  "name": "Shoppy Shop",
+  "icons": [
+    {
+      "src": "images/fevicon/fevicon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/logos/loader_1.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#ffff",
+  "display": "standalone",
+  "theme_color": "#e06d0e"
+}
